@@ -19,3 +19,4 @@ room_speed=60
 depth = -1
 //window_set_fullscreen(1)
 timeheld = 0
+dir = 0

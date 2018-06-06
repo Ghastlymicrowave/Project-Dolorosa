@@ -114,3 +114,17 @@ while place_meeting(x+hspeed,y+vspeed,obj_obstacle) {
 }
 
 if timeheld > maxtimeheld then timeheld = maxtimeheld
+
+// down 270, right 0, left 180, up 90
+
+if speed > 0 then dir = direction
+
+if 70 > dir and dir > 0 then sprite_index = spr_upR
+else if 110 > dir and dir >= 70 then sprite_index = spr_upM
+else if 180 > dir and dir >= 110 then sprite_index = spr_upL
+else if 250 > dir and dir >= 180 then sprite_index = spr_downL
+else if 290 > dir and dir >= 250 then sprite_index = spr_downM
+else if (360 > dir and dir >= 290) or dir = 0 then sprite_index =spr_downR
+
+
+
