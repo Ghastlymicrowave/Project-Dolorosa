@@ -114,7 +114,7 @@
             "Key": "846843b9-86db-4a77-90d3-daa88ef7b9dc",
             "Value": {
                 "id": "6ceb1e75-27d3-4385-bcf6-ce8dc8ab87ab",
-                "resourcePath": "objects\\object1\\object1.yy",
+                "resourcePath": "objects\\obj_debugdraw\\obj_debugdraw.yy",
                 "resourceType": "GMObject"
             }
         },

@@ -2,7 +2,7 @@
     "id": "846843b9-86db-4a77-90d3-daa88ef7b9dc",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "object1",
+    "name": "obj_debugdraw",
     "eventList": [
         {
             "id": "819de5d9-58e7-4140-9d81-0eed955aa15f",
