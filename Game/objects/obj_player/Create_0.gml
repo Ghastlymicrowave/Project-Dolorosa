@@ -17,5 +17,5 @@ hspd = 0
 maxtimeheld =80
 room_speed=60
 depth = -1
-window_set_fullscreen(1)
+//window_set_fullscreen(1)
 timeheld = 0
