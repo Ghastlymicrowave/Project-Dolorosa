@@ -22,3 +22,5 @@ timeheld = 0
 dir = 0
 
 weapontype=1
+combo=0
+combotime=0

@@ -51,6 +51,7 @@ while place_meeting(x+hspeed,y+vspeed,obj_obstacle) {
 ///if maxspeed > 12 then maxspeed = maxspeed - 1
 ///if mouse_check_button(mb_right) then maxspeed = 20
 
+
 switch (timeheld) {
 case 1: maxspeed = 8 ;break;
 case 8: maxspeed = 9 ;break;
@@ -131,5 +132,13 @@ else if dir <= 30 or dir >= 330 then sprite_index = spr_R
 
 
 if mouse_check_button_pressed(mb_left) {
-	instance_create_depth(x,y,1,obj_1hitbox)
+	
+	if weapontype=1 {
+		if combo = 0 {instance_create_depth(x,y,1,obj_1hitbox); combo = 1; combotime = 200}
+		else if combo = 1 {instance_create_depth(x,y,1,obj_1hitbox1); combo = 2; combotime = 200}
+	}
+	if weapontype=2{
+	}
 }
+if combotime != 0 then combotime = combotime - 1
+else combo = 0
