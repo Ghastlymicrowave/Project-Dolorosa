@@ -20,3 +20,5 @@ depth = -1
 //window_set_fullscreen(1)
 timeheld = 0
 dir = 0
+
+weapontype=1

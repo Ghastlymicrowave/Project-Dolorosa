@@ -117,14 +117,19 @@ if timeheld > maxtimeheld then timeheld = maxtimeheld
 
 // down 270, right 0, left 180, up 90
 
-if speed > 0 then dir = direction
+if keyboard_check(ord("S")) or keyboard_check(ord("W")) or keyboard_check(ord("A")) or keyboard_check(ord("D")) then dir = direction
 
-if 70 > dir and dir > 0 then sprite_index = spr_upR
+
+if 70 > dir and dir > 30 then sprite_index = spr_upR
 else if 110 > dir and dir >= 70 then sprite_index = spr_upM
-else if 180 > dir and dir >= 110 then sprite_index = spr_upL
-else if 250 > dir and dir >= 180 then sprite_index = spr_downL
+else if 150 > dir and dir >= 110 then sprite_index = spr_upL
+else if dir >= 150 and dir <=210 then sprite_index = spr_L
+else if 250 > dir and dir > 210 then sprite_index = spr_downL
 else if 290 > dir and dir >= 250 then sprite_index = spr_downM
-else if (360 > dir and dir >= 290) or dir = 0 then sprite_index =spr_downR
+else if 330 > dir and dir >= 290 then sprite_index = spr_downR
+else if dir <= 30 or dir >= 330 then sprite_index = spr_R
 
 
-
+if mouse_check_button_pressed(mb_left) {
+	instance_create_depth(x,y,1,obj_1hitbox)
+}
