@@ -25,3 +25,4 @@ weapontype=7
 combo=0
 combotime=0
 attacking=0
+windup=-1

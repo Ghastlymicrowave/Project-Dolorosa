@@ -5,16 +5,6 @@
     "name": "obj_7hitbox",
     "eventList": [
         {
-            "id": "f2f1b8c6-5958-4b43-bdb4-ac5ec96145f6",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "4d8f3f9d-d7dc-4ebf-8125-1b4b2e50677b"
-        },
-        {
             "id": "106b9f33-9cd3-47da-a970-79230963f72f",
             "modelName": "GMEvent",
             "mvc": "1.0",

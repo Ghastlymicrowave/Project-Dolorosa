@@ -128,12 +128,17 @@ else if 290 > dir and dir >= 250 then sprite_index = spr_downM
 else if 330 > dir and dir >= 290 then sprite_index = spr_downR
 else if dir <= 30 or dir >= 330 then sprite_index = spr_R
 
-
-if mouse_check_button_pressed(mb_left) {
+//setting windups
+if windup > -1 then windup = windup -1
+if mouse_check_button_pressed(mb_left){
+	if weapontype=7 then windup=10
+}
+//attacking
+if windup = 0 {
 	
 	if weapontype=7 {
-		if combo = 0 {instance_create_depth(x,y,1,obj_7hitbox); combo = 1; combotime = 200}
-		else if combo = 1 {instance_create_depth(x,y,1,obj_7hitbox1); combo = 2; combotime = 200}
+		if combo = 0 {instance_create_depth(-100,-100,1,obj_7hitbox); combo = 1; combotime = 200}
+		else if combo = 1 {instance_create_depth(-100,-100,1,obj_7hitbox1); combo = 2; combotime = 200}
 	}
 	if weapontype=2{
 	}
