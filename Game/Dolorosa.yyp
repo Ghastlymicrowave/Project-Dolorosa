@@ -74,7 +74,7 @@
             "Key": "4d8f3f9d-d7dc-4ebf-8125-1b4b2e50677b",
             "Value": {
                 "id": "5c786e37-b07d-4ff3-991a-92178c36b635",
-                "resourcePath": "objects\\obj_1hitbox\\obj_1hitbox.yy",
+                "resourcePath": "objects\\obj_7hitbox\\obj_7hitbox.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -170,7 +170,7 @@
             "Key": "8c1f9c0d-1ae8-4cb9-883f-1775fafa0a1a",
             "Value": {
                 "id": "51583cca-231b-4bed-8a57-1b93f1c033c6",
-                "resourcePath": "objects\\obj_1hitbox1\\obj_1hitbox1.yy",
+                "resourcePath": "objects\\obj_7hitbox1\\obj_7hitbox1.yy",
                 "resourceType": "GMObject"
             }
         },

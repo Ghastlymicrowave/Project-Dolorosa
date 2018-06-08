@@ -52,16 +52,14 @@ while place_meeting(x+hspeed,y+vspeed,obj_obstacle) {
 ///if mouse_check_button(mb_right) then maxspeed = 20
 
 
-switch (timeheld) {
-case 1: maxspeed = 8 ;break;
-case 8: maxspeed = 9 ;break;
-case 15: maxspeed = 11 ;break;
-case 45: maxspeed = 13 ;break;
-case 60: maxspeed = 15 ;break; 
-//case 80: maxspeed = 13 ;break;
-//case 120: maxspeed = 14 ;break; 
-//case 240: maxspeed = 15 ;break; 
-}
+
+if timeheld >= 1 and timeheld < 8 then maxspeed = 8
+else if timeheld >= 8 and timeheld <=15 then maxspeed = 9
+else if timeheld > 15 and timeheld <=45 then maxspeed = 11
+else if timeheld > 45 and timeheld <=60 then maxspeed = 13
+else if timeheld >= 60 then maxspeed = 15
+
+if attacking = 1 then maxspeed = 7
 
 if keyboard_check(ord("S")) or keyboard_check(ord("W")) or keyboard_check(ord("D")) or keyboard_check(ord("A")) then timeheld = timeheld + 1
 else if timeheld !=0 { timeheld = timeheld - 5; if timeheld < 0 then timeheld = 0}
@@ -118,7 +116,7 @@ if timeheld > maxtimeheld then timeheld = maxtimeheld
 
 // down 270, right 0, left 180, up 90
 
-if keyboard_check(ord("S")) or keyboard_check(ord("W")) or keyboard_check(ord("A")) or keyboard_check(ord("D")) then dir = direction
+if (keyboard_check(ord("S")) or keyboard_check(ord("W")) or keyboard_check(ord("A")) or keyboard_check(ord("D"))) and speed > 0 then dir = direction
 
 
 if 70 > dir and dir > 30 then sprite_index = spr_upR
@@ -133,12 +131,13 @@ else if dir <= 30 or dir >= 330 then sprite_index = spr_R
 
 if mouse_check_button_pressed(mb_left) {
 	
-	if weapontype=1 {
-		if combo = 0 {instance_create_depth(x,y,1,obj_1hitbox); combo = 1; combotime = 200}
-		else if combo = 1 {instance_create_depth(x,y,1,obj_1hitbox1); combo = 2; combotime = 200}
+	if weapontype=7 {
+		if combo = 0 {instance_create_depth(x,y,1,obj_7hitbox); combo = 1; combotime = 200}
+		else if combo = 1 {instance_create_depth(x,y,1,obj_7hitbox1); combo = 2; combotime = 200}
 	}
 	if weapontype=2{
 	}
 }
 if combotime != 0 then combotime = combotime - 1
 else combo = 0
+

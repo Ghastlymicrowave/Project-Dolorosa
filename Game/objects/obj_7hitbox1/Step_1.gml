@@ -8,4 +8,4 @@ if check = 0 {
 
 
 time = time -1
-if time = 0 then instance_destroy()
+if time = 0 { obj_player.attacking=0;instance_destroy()}
