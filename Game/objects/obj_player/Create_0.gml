@@ -26,3 +26,9 @@ combo=0
 combotime=0
 attacking=0
 windup=-1
+cooldown=0
+
+
+
+// CHANGE THIS IF YOU WANT TO CHANGE CONTROL
+mouseaiming = 0

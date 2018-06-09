@@ -59,7 +59,7 @@ else if timeheld > 15 and timeheld <=45 then maxspeed = 11
 else if timeheld > 45 and timeheld <=60 then maxspeed = 13
 else if timeheld >= 60 then maxspeed = 15
 
-if attacking = 1 then maxspeed = 7
+if attacking = 1 then maxspeed = 3
 
 if keyboard_check(ord("S")) or keyboard_check(ord("W")) or keyboard_check(ord("D")) or keyboard_check(ord("A")) then timeheld = timeheld + 1
 else if timeheld !=0 { timeheld = timeheld - 5; if timeheld < 0 then timeheld = 0}
@@ -115,9 +115,19 @@ while place_meeting(x+hspeed,y+vspeed,obj_obstacle) {
 if timeheld > maxtimeheld then timeheld = maxtimeheld
 
 // down 270, right 0, left 180, up 90
+if windup > -1 {windup = windup -1; attacking = 1}
+if mouse_check_button_pressed(mb_left){
+	if cooldown=0{
+		if mouseaiming = 1 then dir = point_direction(x,y,mouse_x,mouse_y)
+	
+		
+		if weapontype=7 then windup=10
+	}
+}
 
+if attacking != 1 {
 if (keyboard_check(ord("S")) or keyboard_check(ord("W")) or keyboard_check(ord("A")) or keyboard_check(ord("D"))) and speed > 0 then dir = direction
-
+}
 
 if 70 > dir and dir > 30 then sprite_index = spr_upR
 else if 110 > dir and dir >= 70 then sprite_index = spr_upM
@@ -129,20 +139,35 @@ else if 330 > dir and dir >= 290 then sprite_index = spr_downR
 else if dir <= 30 or dir >= 330 then sprite_index = spr_R
 
 //setting windups
-if windup > -1 then windup = windup -1
+if windup > -1 {windup = windup -1; attacking = 1}
 if mouse_check_button_pressed(mb_left){
-	if weapontype=7 then windup=10
+	if cooldown=0{
+		dir = point_direction(x,y,mouse_x,mouse_y)
+		
+		if weapontype=7 then windup=10
+	}
 }
 //attacking
 if windup = 0 {
-	
-	if weapontype=7 {
-		if combo = 0 {instance_create_depth(-100,-100,1,obj_7hitbox); combo = 1; combotime = 200}
-		else if combo = 1 {instance_create_depth(-100,-100,1,obj_7hitbox1); combo = 2; combotime = 200}
+	if weapontype=1 {
 	}
+	if weapontype=2 {
+	}
+	if weapontype=3 {
+	}
+	if weapontype=4 {
+	}
+	if weapontype=5 {
+	}
+	if weapontype=6 {
+	}
+	if weapontype=7 {
+		if combo = 0 {instance_create_depth(-100,-100,1,obj_7hitbox); combo = 1; combotime = 60}
+		else if combo = 1 {instance_create_depth(-100,-100,1,obj_7hitbox); combo = 2; combotime = 60}
+		else if combo = 2 {instance_create_depth(-100,-100,1,obj_7hitbox); combo = 3; cooldown = 40}}
 	if weapontype=2{
 	}
 }
 if combotime != 0 then combotime = combotime - 1
-else combo = 0
 
+if cooldown !=0 then cooldown = cooldown -1
