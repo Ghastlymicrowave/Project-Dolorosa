@@ -27,6 +27,8 @@ combotime=0
 attacking=0
 windup=-1
 cooldown=0
+timesinceattack = 0
+dank=0
 
 
 

@@ -8,8 +8,8 @@ direction = obj_player.dir
 speed = 80
 
 time = time -1
-if time = 0 { obj_player.attacking=0; obj_player.combo=0 ;instance_destroy() }
+if time = 0 { obj_player.attacking=0; if obj_player.combo = 3 then obj_player.combo=0;instance_destroy() }
 
-if obj_player.combo !=3{
-if mouse_check_button_pressed(mb_left) {obj_player.attacking = 0; instance_destroy()}
-}
+//if obj_player.combo !=3{
+//if mouse_check_button_pressed(mb_left) {obj_player.attacking = 0; instance_destroy()}
+//}
