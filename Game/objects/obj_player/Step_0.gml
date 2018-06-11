@@ -1,58 +1,3 @@
-/*if maxspeed > 12 then maxspeed = maxspeed - 1
-if mouse_check_button(mb_right) then maxspeed = 20
-
-vspd = vspd + (keyboard_check(ord("S")) - keyboard_check(ord("W"))) * speedrate
-hspd = hspd + (keyboard_check(ord("D")) - keyboard_check(ord("A"))) * speedrate
-
-if !keyboard_check(ord("S")) and vspd > 0 then  vspd = vspd -1 
-if !keyboard_check(ord("W")) and vspd < 0 then  vspd = vspd +1 
-if !keyboard_check(ord("A")) and hspd < 0 then  hspd = hspd +1
-if !keyboard_check(ord("D")) and hspd > 0 then  hspd = hspd -1
-
-if hspd > maxspeed then hspd = maxspeed
-else if hspd < -maxspeed then hspd = -maxspeed
-if vspd > maxspeed then vspd = maxspeed
-else if vspd < -maxspeed then vspd = -maxspeed
-
-hspeed = hspd
-vspeed = vspd
-repeat(4){
-while sqrt(hspeed*hspeed+vspeed*vspeed) > maxspeed 
-{
-if hspeed > 0 then hspeed = hspeed - 1
-else hspeed = hspeed + 1
-if vspeed > 0 then vspeed = vspeed - 1
-else vspeed = vspeed + 1
-}
-}
-
-// collision
-
-while place_meeting(x+hspeed,y,obj_obstacle) {
-	if hspeed > 0 then hspeed = hspeed -1
-	else hspeed = hspeed +1
-	hspd = 0
-}
-while place_meeting(x,y+vspeed,obj_obstacle) {
-if vspeed > 0 then vspeed = vspeed -1
-else vspeed = vspeed +1
-vspd = 0
-}
-
-while place_meeting(x+hspeed,y+vspeed,obj_obstacle) {
-	if hspeed > 0 then hspeed = hspeed -1
-	else hspeed = hspeed +1
-	if vspeed > 0 then vspeed = vspeed -1
-	else vspeed = vspeed +1
-
-}*/
-
-
-///if maxspeed > 12 then maxspeed = maxspeed - 1
-///if mouse_check_button(mb_right) then maxspeed = 20
-
-
-
 
 
 if timeheld >= 1 and timeheld < 8 then maxspeed = 8
@@ -193,8 +138,8 @@ if windup = 0 {
 	if weapontype=6 {
 	}
 	if weapontype=7 {
-		if combo = 0 {instance_create_depth(-100,-100,1,obj_7hitbox); combo = 1; combotime = 120; cooldown=30}
-		else if combo = 1 {instance_create_depth(-100,-100,1,obj_7hitbox); combo = 2; combotime = 120; cooldown=30}
+		if combo = 0 {instance_create_depth(-100,-100,1,obj_7hitbox); combo = 1; combotime = 120; cooldown=15}
+		else if combo = 1 {instance_create_depth(-100,-100,1,obj_7hitbox); combo = 2; combotime = 120; cooldown=15}
 		else if combo = 2 {instance_create_depth(-100,-100,1,obj_7hitbox); combo = 3; cooldown = 50; combotime=0}}
 	if weapontype=2{
 	}
