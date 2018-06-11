@@ -94,7 +94,6 @@ if attacking =0{
 	if cooldown=0{
 		if mouseaiming = 1 then dir = point_direction(x,y,mouse_x,mouse_y)
 	
-		
 		if weapontype=7 { windup=3; attacking=1}
 	}
 }
@@ -148,5 +147,5 @@ if(combotime != 0){combotime = combotime - 1}else{combo = 0}
 if cooldown !=0 then cooldown = cooldown -1
 
 
-if attacking = 1 { if dank = 1 { timesinceattack = timesinceattack +1; dank = 0} else dank = 1 } 
+if attacking = 1 { timesinceattack = timesinceattack +1 } 
 else timesinceattack = 0
