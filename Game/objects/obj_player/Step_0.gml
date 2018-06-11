@@ -1,10 +1,9 @@
 
 
 if timeheld >= 1 and timeheld < 8 then maxspeed = 8
-else if timeheld >= 8 and timeheld <=15 then maxspeed = 9
-else if timeheld > 15 and timeheld <=45 then maxspeed = 11
-else if timeheld > 45 and timeheld <=60 then maxspeed = 13
-else if timeheld >= 60 then maxspeed = 15
+else if timeheld >= 15 and timeheld <=45 then maxspeed = 11
+else if timeheld > 45 and timeheld <=60 then maxspeed = 12
+else if timeheld >= 60 then maxspeed = 13
 
 //lowering maxspeed 
 if attacking = 1 then maxspeed = maxspeed - timesinceattack 
@@ -138,8 +137,8 @@ if windup = 0 {
 	if weapontype=6 {
 	}
 	if weapontype=7 {
-		if combo = 0 {instance_create_depth(-100,-100,1,obj_7hitbox); combo = 1; combotime = 20; cooldown=10}
-		else if combo = 1 {instance_create_depth(-100,-100,1,obj_7hitbox); combo = 2; combotime = 20; cooldown=10}
+		if combo = 0 {instance_create_depth(-100,-100,1,obj_7hitbox); combo = 1; combotime = 35; cooldown=10}
+		else if combo = 1 {instance_create_depth(-100,-100,1,obj_7hitbox); combo = 2; combotime = 35; cooldown=10}
 		else if combo = 2 {instance_create_depth(-100,-100,1,obj_7hitbox); combo = 3; cooldown = 30; combotime=30}}
 	if weapontype=2{
 	}
