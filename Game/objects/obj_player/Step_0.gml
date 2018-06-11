@@ -138,13 +138,13 @@ if windup = 0 {
 	if weapontype=6 {
 	}
 	if weapontype=7 {
-		if combo = 0 {instance_create_depth(-100,-100,1,obj_7hitbox); combo = 1; combotime = 120; cooldown=10}
-		else if combo = 1 {instance_create_depth(-100,-100,1,obj_7hitbox); combo = 2; combotime = 120; cooldown=10}
-		else if combo = 2 {instance_create_depth(-100,-100,1,obj_7hitbox); combo = 3; cooldown = 50; combotime=0}}
+		if combo = 0 {instance_create_depth(-100,-100,1,obj_7hitbox); combo = 1; combotime = 20; cooldown=10}
+		else if combo = 1 {instance_create_depth(-100,-100,1,obj_7hitbox); combo = 2; combotime = 20; cooldown=10}
+		else if combo = 2 {instance_create_depth(-100,-100,1,obj_7hitbox); combo = 3; cooldown = 30; combotime=30}}
 	if weapontype=2{
 	}
 }
-if combotime != 0 then combotime = combotime - 1
+if(combotime != 0){combotime = combotime - 1}else{combo = 0}
 
 if cooldown !=0 then cooldown = cooldown -1
 
