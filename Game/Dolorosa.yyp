@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "5d70ce02-a63c-412b-b9de-0a1f6eb2d404",
+            "Value": {
+                "id": "6e7db20f-c11c-4172-8493-f63dee005df5",
+                "resourcePath": "sprites\\spr_aimLarge\\spr_aimLarge.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6008e5d0-b308-4800-b993-ef3ee821066b",
             "Value": {
                 "id": "868cd0f5-8dbe-46bb-bb98-79babe562439",

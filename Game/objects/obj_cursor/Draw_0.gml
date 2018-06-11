@@ -1,1 +1,1 @@
-draw_sprite(spr_aim,0,mouse_x,mouse_y)
+draw_sprite(spr_aimLarge,0,mouse_x,mouse_y)
