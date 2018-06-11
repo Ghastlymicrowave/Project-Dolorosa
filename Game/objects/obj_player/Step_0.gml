@@ -96,7 +96,7 @@ if attacking =0{
 		if mouseaiming = 1 then dir = point_direction(x,y,mouse_x,mouse_y)
 	
 		
-		if weapontype=7 { windup=20; attacking=1}
+		if weapontype=7 { windup=3; attacking=1}
 	}
 }
 }
@@ -138,8 +138,8 @@ if windup = 0 {
 	if weapontype=6 {
 	}
 	if weapontype=7 {
-		if combo = 0 {instance_create_depth(-100,-100,1,obj_7hitbox); combo = 1; combotime = 120; cooldown=15}
-		else if combo = 1 {instance_create_depth(-100,-100,1,obj_7hitbox); combo = 2; combotime = 120; cooldown=15}
+		if combo = 0 {instance_create_depth(-100,-100,1,obj_7hitbox); combo = 1; combotime = 120; cooldown=10}
+		else if combo = 1 {instance_create_depth(-100,-100,1,obj_7hitbox); combo = 2; combotime = 120; cooldown=10}
 		else if combo = 2 {instance_create_depth(-100,-100,1,obj_7hitbox); combo = 3; cooldown = 50; combotime=0}}
 	if weapontype=2{
 	}
