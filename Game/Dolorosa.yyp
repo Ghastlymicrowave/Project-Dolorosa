@@ -82,7 +82,7 @@
             "Key": "4d8f3f9d-d7dc-4ebf-8125-1b4b2e50677b",
             "Value": {
                 "id": "5c786e37-b07d-4ff3-991a-92178c36b635",
-                "resourcePath": "objects\\obj_7hitbox\\obj_7hitbox.yy",
+                "resourcePath": "objects\\obj_midhitbox\\obj_midhitbox.yy",
                 "resourceType": "GMObject"
             }
         },

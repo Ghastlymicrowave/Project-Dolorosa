@@ -21,7 +21,7 @@ depth = -1
 timeheld = 0
 dir = 0
 
-weapontype=7
+weapontype=6
 combo=0
 combotime=0
 attacking=0
