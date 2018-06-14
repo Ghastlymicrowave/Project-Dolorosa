@@ -128,7 +128,7 @@ if windup = 0 {
 	if weapontype=5 {
 	} //				Weapon 6, Hand Axe moveset
 	if weapontype=6 {
-		if combo = 0 {instance_create_depth(-100,-100,1,obj_midhitbox); combo = 1; combotime = 35; cooldown=12;
+		if combo = 0 {instance_create_depth(-100,-100,1,obj_midhitbox); combo = 1; combotime = 35; cooldown=12
 																				obj_midhitbox.time=8}
 		else if combo = 1 {instance_create_depth(-100,-100,1,obj_midhitbox); combo = 2; combotime = 35; cooldown=12
 																				obj_midhitbox.time=8}
