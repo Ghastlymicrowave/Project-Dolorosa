@@ -28,3 +28,6 @@ motion_set(kndir,round(knockback)/4)
 }
 
 if(tick>0){tick --}
+
+x= round(x)
+y= round(y)
