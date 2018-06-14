@@ -15,7 +15,7 @@ if(!place_meeting(x,y,obj_obstacle)){xx = x
 		
 	cx = x 
 	cy = y
-	knockback = knockback*-1
+	knockback = knockback*-0.5
 	x = xx
 	y = yy
 	kndir = point_direction(cx,cy,x,y)
