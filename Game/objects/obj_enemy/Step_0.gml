@@ -7,7 +7,7 @@ if(round(knockback)!=0){
 }
 repeat(4){
 	
-if(!place_meeting(x,y,obj_obstacle)){xx = x
+if(!place_meeting(x+hspeed,y+vspeed,obj_obstacle)){xx = x
 	
 	yy = y
 	
