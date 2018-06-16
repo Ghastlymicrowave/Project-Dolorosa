@@ -8,5 +8,5 @@ direction = obj_player.dir
 speed = 80
 
 time = time -1
-if time = 0 { obj_player.attacking=0; instance_destroy() }
+if time = 0 { obj_player.attacking=0;instance_destroy() }
 

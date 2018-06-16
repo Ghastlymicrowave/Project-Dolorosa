@@ -1,8 +1,8 @@
 {
-    "id": "48a36e19-1f42-4dc2-abdf-3d87292386cf",
+    "id": "b6664590-a63a-4fb4-8749-302c149c382b",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_smlhitbox",
+    "name": "obj_midlonghitbox",
     "eventList": [
         
     ],
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "bc8340b6-0f0a-4f53-8dcd-857893273f01",
+    "spriteId": "15f7e108-bec9-48c6-8e7c-1bc413f3a919",
     "visible": true
 }

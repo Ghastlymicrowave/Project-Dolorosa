@@ -3,7 +3,7 @@
 
 if(tick <= 0){
 knockback = obj_player.knockback
-kndir = obj_midhitbox.image_angle
+kndir = obj_hitboxparent.image_angle
 tick = 30
 path_end();
 }
