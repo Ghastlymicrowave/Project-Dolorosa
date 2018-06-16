@@ -37,7 +37,7 @@ yy=0
 // Settings
 mouseaiming = 1
 attackbutton = mb_left
-autofire = 0
+autofire = 1
 
 //idk
 a=5
