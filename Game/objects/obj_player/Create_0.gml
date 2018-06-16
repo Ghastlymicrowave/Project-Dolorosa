@@ -25,14 +25,19 @@ weapontype=6
 combo=0
 combotime=0
 attacking=0
+knockback = 60
 windup=-1
 cooldown=0
 timesinceattack = 0
 isheavy = 0
 
+xx=0
+yy=0
 
+// Settings
+mouseaiming = 1
+attackbutton = mb_left
+autofire = 0
 
-// CHANGE THIS IF YOU WANT TO CHANGE CONTROL
-mouseaiming = 0
-
+//idk
 a=5

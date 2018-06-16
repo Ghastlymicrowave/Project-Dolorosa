@@ -42,7 +42,7 @@ if(distance_to_object(obj_player)<=5000&&tick<=0&&tick2<=0){
 
   if(mp_grid_path(global.grid, path, x, y, obj_player.x, obj_player.y, 1))
      {
-     path_start(path, 3, 3, 0);
+     path_start(path, 3, path_action_stop, 0);
      }
 }
 

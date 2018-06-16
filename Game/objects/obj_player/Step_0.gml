@@ -88,8 +88,21 @@ while place_meeting(x+hspeed,y+vspeed,obj_obstacle) {
 if timeheld > maxtimeheld then timeheld = maxtimeheld
 
 // down 270, right 0, left 180, up 90
+
+//Attacks
+
+if(autofire = 0){
+
+	attackcondition = mouse_check_button_pressed(attackbutton)
+
+}else{
+
+	attackcondition = mouse_check_button(attackbutton)
+
+}
+
 if windup > -1 {windup = windup -1}
-if mouse_check_button_pressed(mb_left){
+if attackcondition{
 if attacking =0{
 	if cooldown=0{
 		if mouseaiming = 1 then dir = point_direction(x,y,mouse_x,mouse_y)
@@ -167,3 +180,5 @@ if cooldown !=0 then cooldown = cooldown -1
 
 if attacking = 1 { timesinceattack = timesinceattack +1 } 
 else timesinceattack = 0
+
+//Stay within enemy range
