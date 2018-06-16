@@ -28,9 +28,11 @@ attacking=0
 windup=-1
 cooldown=0
 timesinceattack = 0
-
+isheavy = 0
 
 
 
 // CHANGE THIS IF YOU WANT TO CHANGE CONTROL
 mouseaiming = 0
+
+a=5
