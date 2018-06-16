@@ -111,7 +111,7 @@ if attacking =0{
    else if weapontype=3 { windup=3; attacking=1}
    else if weapontype=4 { windup=4; attacking=1}
    else if weapontype=5 { windup=10; attacking=1}
-   else if weapontype=6 { windup=5; attacking=1}
+   else if weapontype=6 { windup=8; attacking=1}
    else if weapontype=7 { windup=7; attacking=1}
    else if weapontype=8 { windup=12; attacking=1}
    
@@ -143,7 +143,7 @@ if windup = 0 {
 		if combo = 0 {instance_create_depth(-100,-100,1,obj_midhitbox); combo = 1; combotime = 35; cooldown = 11; obj_midhitbox.time=6}
 		else if combo = 1 {instance_create_depth(-100,-100,1,obj_midhitbox); combo = 2; combotime = 35; cooldown = 11; obj_midhitbox.time=6}
 		else if combo = 2 {instance_create_depth(-100,-100,1,obj_midhitbox); combo = 3; combotime = 35; cooldown = 11; obj_midhitbox.time=6}
-		else if combo = 3 {instance_create_depth(-100,-100,1,obj_midhitbox); combo = 0; combotime = 1; cooldown = 25; obj_midhitbox.time=6}
+		else if combo = 3 {instance_create_depth(-100,-100,1,obj_midhitbox); combo = 0; combotime = 1; cooldown = 32; obj_midhitbox.time=6}
 		}
 		//				Weapon 2, Fist weapons moveset
 	else if weapontype=2 {
@@ -151,13 +151,13 @@ if windup = 0 {
 		else if combo = 1 {instance_create_depth(-100,-100,1,obj_smlhitbox); combo = 2; combotime = 35; cooldown = 9; obj_smlhitbox.time=3}
 		else if combo = 2 {instance_create_depth(-100,-100,1,obj_smlhitbox); combo = 3; combotime = 35; cooldown = 9; obj_smlhitbox.time=3}
 		else if combo = 3 {instance_create_depth(-100,-100,1,obj_smlhitbox); combo = 4; combotime = 35; cooldown = 9; obj_smlhitbox.time=3}
-		else if combo = 4 {instance_create_depth(-100,-100,1,obj_smlhitbox); combo = 0; combotime = 1; cooldown = 30; obj_smlhitbox.time=3}
+		else if combo = 4 {instance_create_depth(-100,-100,1,obj_smlhitbox); combo = 0; combotime = 1; cooldown = 28; obj_smlhitbox.time=3}
 		}
 		//				Weapon 3, dagger moveset
 	else if weapontype=3 {
 		if combo = 0 {instance_create_depth(-100,-100,1,obj_smlhitbox); combo = 1; combotime = 35; cooldown = 8; obj_smlhitbox.time=3}
 		else if combo = 1 {instance_create_depth(-100,-100,1,obj_smlhitbox); combo = 2; combotime = 35; cooldown = 8; obj_smlhitbox.time=3}
-		else if combo = 2 {instance_create_depth(-100,-100,1,obj_smlhitbox); combo = 0; combotime = 1; cooldown = 28; obj_smlhitbox.time=3}
+		else if combo = 2 {instance_create_depth(-100,-100,1,obj_smlhitbox); combo = 0; combotime = 1; cooldown = 32; obj_smlhitbox.time=3}
 		}
 		//				Weapon 4, Rapier moveset
 	else if weapontype=4 {
@@ -170,14 +170,14 @@ if windup = 0 {
 	else if weapontype=5 {
 		if combo = 0 {instance_create_depth(-100,-100,1,obj_midhitbox); combo = 1; combotime = 35; cooldown=12; obj_midhitbox.time=8}
 		else if combo = 1 {instance_create_depth(-100,-100,1,obj_midhitbox); combo = 2; combotime = 35; cooldown=12; obj_midhitbox.time=8}
-		else if combo = 2 {instance_create_depth(-100,-100,1,obj_midhitbox); combo = 0; cooldown = 30; combotime=1; obj_midhitbox.time=8}
+		else if combo = 2 {instance_create_depth(-100,-100,1,obj_midhitbox); combo = 0; cooldown = 45; combotime=1; obj_midhitbox.time=8}
 		}
 		//				Weapon 6, Shortsword moveset
 	else if weapontype=6 {
 		
-		if combo = 0 {instance_create_depth(-100,-100,1,obj_midhitbox); combo = 1; combotime = 35; cooldown=10; obj_midhitbox.time=5}
-		else if combo = 1 {instance_create_depth(-100,-100,1,obj_midhitbox); combo = 2; combotime = 35; cooldown=10; obj_midhitbox.time=5}
-		else if combo = 2 {instance_create_depth(-100,-100,1,obj_midhitbox); combo = 3; combotime = 35; cooldown=15; obj_midhitbox.time=5}
+		if combo = 0 {instance_create_depth(-100,-100,1,obj_midhitbox); combo = 1; combotime = 35; cooldown=11; obj_midhitbox.time=5}
+		else if combo = 1 {instance_create_depth(-100,-100,1,obj_midhitbox); combo = 2; combotime = 35; cooldown=11; obj_midhitbox.time=5}
+		else if combo = 2 {instance_create_depth(-100,-100,1,obj_midhitbox); combo = 3; combotime = 35; cooldown=11; obj_midhitbox.time=5}
 		else if combo = 3 {instance_create_depth(-100,-100,1,obj_midhitbox); combo = 4; cooldown = 40; combotime=10; obj_midhitbox.sprite_index = spr_smallthinhitbox; obj_midhitbox.time=8}	
 		}
 		//				Weapon 7, Flail moveset
