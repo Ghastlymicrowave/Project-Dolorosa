@@ -311,6 +311,22 @@
             }
         },
         {
+            "Key": "d238336c-6263-48f3-9e48-27b3c58dfbcd",
+            "Value": {
+                "id": "a397101f-408c-4d1b-9724-821093124769",
+                "resourcePath": "sprites\\sprite11\\sprite11.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d39e0699-23ea-447c-bb88-277b1eb49d48",
+            "Value": {
+                "id": "98a0f779-3155-4350-8bbf-3635926d7405",
+                "resourcePath": "objects\\obj_enobstacle\\obj_enobstacle.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d5860ebd-d25b-46b5-8d1d-63f8e58ba075",
             "Value": {
                 "id": "a16834d4-cbf7-4aab-a61e-1756b7e65bbc",

@@ -5,4 +5,5 @@ if(tick <= 0){
 knockback = 90
 kndir = obj_midhitbox.image_angle
 tick = 30
+path_end();
 }
