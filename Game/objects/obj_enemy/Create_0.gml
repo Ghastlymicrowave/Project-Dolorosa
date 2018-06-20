@@ -19,7 +19,12 @@ cx = 0
 //contact x
 cy = 0
 //contact y
+tick3 = 0
 
+tick3max = 5
+//reaction time
+tick4 = 0
+//dodge amount
 
 //establish grid and path
 global.grid = mp_grid_create(0, 0, room_width, room_height, 1, 1)
