@@ -40,30 +40,26 @@ if(distance_to_object(obj_player)<50){
 }
 
 //dodging
+<<<<<<< HEAD
 
 if(obj_player.windup>0 and distance_to_object(obj_player)<200){path_end();
+=======
+/*
+if(obj_player.windup>0&&distance_to_object(obj_player)<200){path_end();
+>>>>>>> 6d94e9a8e5c5988f945be497c45df5f36076d687
 	
 	tick3 = tick3max
+	tick4 = 6
 
 }
 
-if(tick3 > 0){
-
-tick3--
-
-}else{
-
-tick4=5
-
-}
-
-if(tick4 > 0&&distance_to_object(obj_player)<200){
+if(tick4 > 0&&distance_to_object(obj_player)<200&&tick3<=0){
 
 tick4--
-motion_set(point_direction(obj_player.x,obj_player.y,x,y),tick4*5)
+motion_set(point_direction(obj_player.x,obj_player.y,x,y),tick4*10)
 
-}
-
+}else{tick3--}
+*/
 //basic pathfinding
 
 mp_grid_add_instances(global.grid, obj_enobstacle, true);

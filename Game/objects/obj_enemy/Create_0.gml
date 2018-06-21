@@ -21,7 +21,7 @@ cy = 0
 //contact y
 tick3 = 0
 
-tick3max = 5
+tick3max = 0
 //reaction time
 tick4 = 0
 //dodge amount
