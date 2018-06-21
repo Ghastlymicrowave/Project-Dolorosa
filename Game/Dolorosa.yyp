@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "152348a1-984d-4713-b840-1e6b12b61417",
+            "Value": {
+                "id": "a0c8d875-fb49-4577-9369-70a524afecb9",
+                "resourcePath": "fonts\\font_debug\\font_debug.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "15f7e108-bec9-48c6-8e7c-1bc413f3a919",
             "Value": {
                 "id": "a2fb81b3-3b90-462e-8d82-ceda0fce020a",
@@ -255,6 +263,14 @@
             }
         },
         {
+            "Key": "7bf5d3f8-2342-4c11-89eb-256f32ec8a66",
+            "Value": {
+                "id": "0677d3ef-007f-44c1-a6e8-dc68d5126f56",
+                "resourcePath": "sprites\\spr_font\\spr_font.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7c0ee678-384d-49c8-b025-5bcadaaf0258",
             "Value": {
                 "id": "b890ee95-4168-4053-84b2-15a1416a28a4",
@@ -356,6 +372,14 @@
                 "id": "70bc44e8-4070-4c6e-a489-54507b80341c",
                 "resourcePath": "sprites\\sprite2\\sprite2.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c2e6baea-60b9-404b-b3a2-b1f277647e50",
+            "Value": {
+                "id": "e1a0d20f-b0b9-448d-beb4-5a890e247566",
+                "resourcePath": "objects\\obj_testing_fonts\\obj_testing_fonts.yy",
+                "resourceType": "GMObject"
             }
         },
         {
