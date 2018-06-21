@@ -41,7 +41,7 @@ if(distance_to_object(obj_player)<50){
 
 //dodging
 
-if(obj_player.windup>0&&distance_to_object(obj_player)<200){path_end();
+if(obj_player.windup>0 and distance_to_object(obj_player)<200){path_end();
 	
 	tick3 = tick3max
 

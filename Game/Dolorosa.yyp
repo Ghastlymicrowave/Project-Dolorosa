@@ -79,6 +79,30 @@
             }
         },
         {
+            "Key": "1f317473-98e3-4c0c-8854-58ae6ccbe475",
+            "Value": {
+                "id": "9387ae89-4403-47cf-a0bb-f6db02d1912f",
+                "resourcePath": "sprites\\spr_indicator\\spr_indicator.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3f317eb6-5a2a-45eb-a326-dbffc1b3c7e8",
+            "Value": {
+                "id": "cbd7fad1-a549-41bd-ad61-8e3d2070260d",
+                "resourcePath": "objects\\obj_interacthitbox\\obj_interacthitbox.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "4043b9fc-1df1-4e31-bba2-cf63da8f447c",
+            "Value": {
+                "id": "10c5d24c-1c6f-4f11-b79b-9e1ff533ee4f",
+                "resourcePath": "objects\\obj_indicator\\obj_indicator.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "43bd5af9-07cd-45c1-a007-c2b2c66cf116",
             "Value": {
                 "id": "32ac60ce-e792-44ca-b8e9-79cee3257864",
@@ -175,6 +199,14 @@
             }
         },
         {
+            "Key": "600769b8-1744-4ff9-ae31-3e429f71b7ea",
+            "Value": {
+                "id": "94ba4281-a0d0-48f4-acd1-0756491d9cf8",
+                "resourcePath": "objects\\obj_interactable_test\\obj_interactable_test.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6008e5d0-b308-4800-b993-ef3ee821066b",
             "Value": {
                 "id": "868cd0f5-8dbe-46bb-bb98-79babe562439",
@@ -187,6 +219,14 @@
             "Value": {
                 "id": "313918d9-d2e7-4f0f-bfef-8c0553282d4d",
                 "resourcePath": "objects\\obj_cursor\\obj_cursor.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "6c3c1e38-4565-4746-96b6-a266d56caefd",
+            "Value": {
+                "id": "b981b4a2-fef8-4b4f-b510-eed8fa829768",
+                "resourcePath": "objects\\obj_interactableParent\\obj_interactableParent.yy",
                 "resourceType": "GMObject"
             }
         },
