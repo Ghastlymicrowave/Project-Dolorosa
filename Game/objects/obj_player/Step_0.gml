@@ -6,7 +6,10 @@ else if timeheld > 45 and timeheld <=60 then maxspeed = 12
 else if timeheld >= 60 then maxspeed = 13
 
 //lowering maxspeed 
-if attacking = 1 then maxspeed = maxspeed - timesinceattack 
+
+if windup > 0 then maxspeed = windupmax
+
+if attacking = 1 then maxspeed = 0
 if maxspeed < 0 then maxspeed = 0
 
 //if attacking = 1 then maxspeed = 3
@@ -105,17 +108,17 @@ if windup > -1 {windup = windup -1}
 if attackcondition{
 if attacking =0{
 	if cooldown=0{
-		if mouseaiming = 1 then dir = point_direction(x,y,mouse_x,mouse_y)
-		if weapontype=1 { windup=4; attacking=1}
-   else if weapontype=2 { windup=4; attacking=1}
-   else if weapontype=3 { windup=3; attacking=1}
-   else if weapontype=4 { windup=4; attacking=1}
-   else if weapontype=5 { windup=10; attacking=1}
-   else if weapontype=6 { windup=8; attacking=1}
-   else if weapontype=7 { windup=7; attacking=1}
-   else if weapontype=8 { windup=12; attacking=1}
-   else if weapontype=9 { windup=6; attacking=1}
-   else if weapontype=10 { windup=10; attacking=1}
+		if weapontype=1 { windup=4; windupmax =8 }
+   else if weapontype=2 { windup=4; windupmax =8 }
+   else if weapontype=3 { windup=3; windupmax =8 }
+   else if weapontype=4 { windup=4; windupmax =7}
+   else if weapontype=5 { windup=10; windupmax =6 }
+   else if weapontype=6 { windup=8; windupmax =7 }
+   else if weapontype=7 { windup=7; windupmax =6 }
+   else if weapontype=8 { windup=12; windupmax =5 }
+   else if weapontype=9 { windup=6; windupmax =7 }
+   else if weapontype=10 { windup=10; windupmax =8 }
+   else if weapontype=11 { windup=14; windupmax =6 }
    
    isheavy=0
 	}
@@ -138,6 +141,7 @@ else if dir <= 30 or dir >= 330 then sprite_index = spr_R
 
 //attacking
 if windup = 0 {
+	if mouseaiming = 1 then {direction = point_direction(x,y,mouse_x,mouse_y); dir = point_direction(x,y,mouse_x,mouse_y)}
 				//		Light combos
 	if isheavy=0 {
 		//				Weapon 1, Curved sword moveset
@@ -210,6 +214,13 @@ if windup = 0 {
 		else if combo = 3 {instance_create_depth(-100,-100,1,obj_midlonghitbox); combo = 4; cooldown = 40; combotime=10; obj_midlonghitbox.time=5; obj_midlonghitbox.speed=90}	
 	}
 	
+	//					Weapon 11, lance
+	else if weapontype=11 {
+		
+		if combo = 0 {instance_create_depth(-100,-100,1,obj_midlonghitbox); combo = 1; combotime = 35; cooldown=24; obj_midlonghitbox.time=11; obj_midlonghitbox.speed=100}
+		else if combo = 1 {instance_create_depth(-100,-100,1,obj_midlonghitbox); combo = 2; combotime = 35; cooldown=24; obj_midlonghitbox.time=11; obj_midlonghitbox.speed=100}
+		else if combo = 2 {instance_create_depth(-100,-100,1,obj_midlonghitbox); combo = 3; cooldown = 45; combotime=10; obj_midlonghitbox.time=11; obj_midlonghitbox.speed=100}	
+	}
 	
 	
 	
