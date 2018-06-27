@@ -126,8 +126,9 @@ if attacking =0{
 }
 
 if attacking != 1 {
-if (keyboard_check(ord("S")) or keyboard_check(ord("W")) or keyboard_check(ord("A")) or keyboard_check(ord("D"))) and speed > 0 then dir = direction
-}
+	if cooldown <= 0 {
+		if (keyboard_check(ord("S")) or keyboard_check(ord("W")) or keyboard_check(ord("A")) or keyboard_check(ord("D"))) and speed > 0 then dir = direction} 
+} else direction = dir
 
 if 70 > dir and dir > 30 then sprite_index = spr_upR
 else if 110 > dir and dir >= 70 then sprite_index = spr_upM
