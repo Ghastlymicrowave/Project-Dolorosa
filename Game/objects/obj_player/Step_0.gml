@@ -9,7 +9,7 @@ else if timeheld >= 60 then maxspeed = 13
 
 if windup > 0 then maxspeed = windupmax
 
-if attacking = 1 then maxspeed = 0
+if instance_exists(obj_hitboxparent) then maxspeed = 0
 if maxspeed < 0 then maxspeed = 0
 
 //if attacking = 1 then maxspeed = 3
@@ -62,26 +62,7 @@ vspeed= floor(vspeed)
 
 
 
-// collision
 
-while place_meeting(x+hspeed,y,obj_obstacle) {
-	if hspeed > 0 then hspeed = hspeed -1
-	else hspeed = hspeed +1
-	hspd = 0
-}
-while place_meeting(x,y+vspeed,obj_obstacle) {
-if vspeed > 0 then vspeed = vspeed -1
-else vspeed = vspeed +1
-vspd = 0
-}
-
-while place_meeting(x+hspeed,y+vspeed,obj_obstacle) {
-	if hspeed > 0 then hspeed = hspeed -1
-	else hspeed = hspeed +1
-	if vspeed > 0 then vspeed = vspeed -1
-	else vspeed = vspeed +1
-
-}
 
 
 
@@ -108,6 +89,7 @@ if windup > -1 {windup = windup -1}
 if attackcondition{
 if attacking =0{
 	if cooldown=0{
+		attacking =1
 		if weapontype=1 { windup=4; windupmax =8 }
    else if weapontype=2 { windup=4; windupmax =8 }
    else if weapontype=3 { windup=3; windupmax =8 }
@@ -128,8 +110,14 @@ if attacking =0{
 if attacking != 1 {
 	if cooldown <= 0 {
 		if (keyboard_check(ord("S")) or keyboard_check(ord("W")) or keyboard_check(ord("A")) or keyboard_check(ord("D"))) and speed > 0 then dir = direction} 
-} else direction = dir
+} else {
+	
+	direction = dir
+	// HEEEEEEEEEEEEEEEEEEEEEEYYYYYYYYY RYAAAAAAAAAAAAAAAAAAAAAAAAAANNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
+	/// INPUT HERE if weapontype = then speed = yaddayadda
+	// to make it so that you dash forward while attacking
 
+}
 if 70 > dir and dir > 30 then sprite_index = spr_upR
 else if 110 > dir and dir >= 70 then sprite_index = spr_upM
 else if 150 > dir and dir >= 110 then sprite_index = spr_upL
@@ -238,3 +226,25 @@ if attacking = 1 { timesinceattack = timesinceattack +1 }
 else timesinceattack = 0
 
 //Stay within enemy range
+
+
+// collision
+
+while place_meeting(x+hspeed,y,obj_obstacle) {
+	if hspeed > 0 then hspeed = hspeed -1
+	else hspeed = hspeed +1
+	hspd = 0
+}
+while place_meeting(x,y+vspeed,obj_obstacle) {
+if vspeed > 0 then vspeed = vspeed -1
+else vspeed = vspeed +1
+vspd = 0
+}
+
+while place_meeting(x+hspeed,y+vspeed,obj_obstacle) {
+	if hspeed > 0 then hspeed = hspeed -1
+	else hspeed = hspeed +1
+	if vspeed > 0 then vspeed = vspeed -1
+	else vspeed = vspeed +1
+
+}
