@@ -112,7 +112,7 @@ if attacking != 1 {
 		if (keyboard_check(ord("S")) or keyboard_check(ord("W")) or keyboard_check(ord("A")) or keyboard_check(ord("D"))) and speed > 0 then dir = direction} 
 } else {
 	
-	direction = dir
+	//direction = dir
 	// HEEEEEEEEEEEEEEEEEEEEEEYYYYYYYYY RYAAAAAAAAAAAAAAAAAAAAAAAAAANNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
 	/// INPUT HERE if weapontype = then speed = yaddayadda
 	// to make it so that you dash forward while attacking
@@ -130,7 +130,9 @@ else if dir <= 30 or dir >= 330 then sprite_index = spr_R
 
 //attacking
 if windup = 0 {
-	if mouseaiming = 1 then {direction = point_direction(x,y,mouse_x,mouse_y); dir = point_direction(x,y,mouse_x,mouse_y)}
+	if mouseaiming = 1 then { dir = point_direction(x,y,mouse_x,mouse_y)
+		//direction = point_direction(x,y,mouse_x,mouse_y);
+		}
 				//		Light combos
 	if isheavy=0 {
 		//				Weapon 1, Curved sword moveset
