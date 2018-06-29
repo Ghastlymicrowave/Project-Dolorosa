@@ -7,10 +7,13 @@ else if timeheld >= 60 then maxspeed = 13
 
 //lowering maxspeed 
 
-if windup > 0 then maxspeed = windupmax
+if windup > 0 or combotime > 0 then maxspeed = windupmax
 
 if instance_exists(obj_hitboxparent) then maxspeed = 0
 if maxspeed < 0 then maxspeed = 0
+
+//           \/                REMOVE THIS IF YOU DONT WANT TO BE SLOW AFTER ATTACKING \/
+
 
 //if attacking = 1 then maxspeed = 3
 
@@ -111,6 +114,9 @@ if attacking != 1 {
 	if cooldown <= 0 {
 		if (keyboard_check(ord("S")) or keyboard_check(ord("W")) or keyboard_check(ord("A")) or keyboard_check(ord("D"))) and speed > 0 then dir = direction} 
 } else {
+	
+	
+direction = dir
 	
 	//direction = dir
 	// HEEEEEEEEEEEEEEEEEEEEEEYYYYYYYYY RYAAAAAAAAAAAAAAAAAAAAAAAAAANNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
