@@ -12,11 +12,6 @@ if windup > 0 or combotime > 0 then maxspeed = windupmax
 if instance_exists(obj_hitboxparent) then maxspeed = 0
 if maxspeed < 0 then maxspeed = 0
 
-//           \/                REMOVE THIS IF YOU DONT WANT TO BE SLOW AFTER ATTACKING \/
-
-
-//if attacking = 1 then maxspeed = 3
-
 if keyboard_check(ord("S")) or keyboard_check(ord("W")) or keyboard_check(ord("D")) or keyboard_check(ord("A")) then timeheld = timeheld + 1
 else if timeheld !=0 { timeheld = timeheld - 5; if timeheld < 0 then timeheld = 0}
 
@@ -45,30 +40,6 @@ else hspeed = hspeed + 1
 if vspeed > 0 then vspeed = vspeed - 1
 else vspeed = vspeed + 1
 }
-//}
-
-///if speed > maxspeed then speed = maxspeed
-
-
-
-// if attacking setting speed
-
-//                                                 moving while attacking code right here \/
-
-/*
-if instance_exists(obj_7hitbox) then{
-	speed = 3
-	direction = dir
-hspeed= floor(hspeed)
-vspeed= floor(vspeed)
-}*/
-
-
-
-
-
-
-
 
 
 
@@ -116,7 +87,6 @@ if attacking != 1 {
 } else {
 	
 	
-direction = dir
 	
 	//direction = dir
 	// HEEEEEEEEEEEEEEEEEEEEEEYYYYYYYYY RYAAAAAAAAAAAAAAAAAAAAAAAAAANNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
