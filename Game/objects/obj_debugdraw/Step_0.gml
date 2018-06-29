@@ -1,4 +1,4 @@
-if keyboard_check_pressed(vk_multiply) then row = row+1
+if keyboard_check_pressed(vk_add) then row = row+1
 if row = 2 then row = 0
 
 if row = 0 {
@@ -14,4 +14,5 @@ if row = 0 {
 }
 else if row =1 {
 	if keyboard_check(vk_numpad0) then obj_player.weapontype = 10
+	if keyboard_check(vk_numpad1) then obj_player.weapontype = 11
 }
