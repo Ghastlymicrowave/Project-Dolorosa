@@ -1,13 +1,13 @@
 
 
 if timeheld >= 1 and timeheld < 8 then maxspeed = 8
-else if timeheld >= 15 and timeheld <=45 then maxspeed = 11
-else if timeheld > 45 and timeheld <=60 then maxspeed = 12
-else if timeheld >= 60 then maxspeed = 13
+else if timeheld >= 15 and timeheld <=45 then maxspeed = 11 + dashtimer*2
+else if timeheld > 45 and timeheld <=60 then maxspeed = 12 + dashtimer*3
+else if timeheld >= 60 then maxspeed = 13 + dashtimer*4
 
 //lowering maxspeed 
 
-if windup > 0 or combotime > 0 then maxspeed = windupmax
+if windup > 0 or combotime > 0 then maxspeed = windupmax + dashtimer^2
 
 if instance_exists(obj_hitboxparent) then maxspeed = 0
 if maxspeed < 0 then maxspeed = 0
@@ -226,3 +226,25 @@ while place_meeting(x+hspeed,y+vspeed,obj_obstacle) {
 	else vspeed = vspeed +1
 
 }
+
+//Dash
+
+if(keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_shift)&& dashcooldown <= 0){
+
+	dashtimer = 15
+	dashcooldown += 40
+
+}
+
+if(dashtimer>0){
+
+	dashtimer --
+	maxspeed = 30
+	
+}else{
+
+	maxspeed = 12
+
+}
+
+if(dashcooldown>0){dashcooldown--}

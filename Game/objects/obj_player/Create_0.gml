@@ -9,6 +9,10 @@ tier3 = 10
 vspdtier = 0
 hspdtier = 0*/
 
+dashtimer = 1
+dashcooldown = 0
+dashcount = 0
+
 speedrate = 2
 maxspeed = 12
 slowrate = 2
