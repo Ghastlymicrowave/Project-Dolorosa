@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "3108eeae-91fd-4509-9ab9-c905d6ea6e80",
+            "Value": {
+                "id": "18eef7ce-515a-460c-bd94-0cea6ff704f9",
+                "resourcePath": "scripts\\DrawSumText\\DrawSumText.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3f317eb6-5a2a-45eb-a326-dbffc1b3c7e8",
             "Value": {
                 "id": "cbd7fad1-a549-41bd-ad61-8e3d2070260d",
@@ -386,7 +394,7 @@
             "Key": "c2e6baea-60b9-404b-b3a2-b1f277647e50",
             "Value": {
                 "id": "e1a0d20f-b0b9-448d-beb4-5a890e247566",
-                "resourcePath": "objects\\obj_testing_fonts\\obj_testing_fonts.yy",
+                "resourcePath": "objects\\obj_drawtext\\obj_drawtext.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -402,7 +410,7 @@
             "Key": "ca3f4c11-6e6a-49e7-8a79-15411b83617d",
             "Value": {
                 "id": "113e7325-5c68-43ab-8311-0fa6045c1a0f",
-                "resourcePath": "sprites\\sprite23\\sprite23.yy",
+                "resourcePath": "sprites\\spr_testbackground\\spr_testbackground.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -536,7 +544,7 @@
         }
     ],
     "script_order": [
-        
+        "3108eeae-91fd-4509-9ab9-c905d6ea6e80"
     ],
     "tutorial": ""
 }

@@ -16,3 +16,5 @@ else if row =1 {
 	if keyboard_check(vk_numpad0) then obj_player.weapontype = 10
 	if keyboard_check(vk_numpad1) then obj_player.weapontype = 11
 }
+
+if keyboard_check_pressed(ord("R")) then room_restart()

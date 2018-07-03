@@ -2,7 +2,7 @@
     "id": "c2e6baea-60b9-404b-b3a2-b1f277647e50",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_testing_fonts",
+    "name": "obj_drawtext",
     "eventList": [
         {
             "id": "fcfcf2a0-d70a-4acc-a3e9-bdee9981f120",
@@ -30,7 +30,7 @@
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
+            "enumb": 73,
             "eventtype": 8,
             "m_owner": "c2e6baea-60b9-404b-b3a2-b1f277647e50"
         }
