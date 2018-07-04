@@ -10,3 +10,4 @@ textspeed = 4
 tock = 0
 texttype=1
 textcomplete = 0
+drawing = 0

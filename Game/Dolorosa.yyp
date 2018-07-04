@@ -503,6 +503,14 @@
             }
         },
         {
+            "Key": "dc1d6b38-2533-4d6d-a6ab-a434c7a4b177",
+            "Value": {
+                "id": "1dfe95aa-6203-4b16-8c8c-7cb47db52fc3",
+                "resourcePath": "scripts\\StopDrawingText\\StopDrawingText.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "dcb48007-983e-4af6-9494-b2b1f523ba75",
             "Value": {
                 "id": "95848a74-db44-41c2-a439-1f4ecfedf301",
@@ -576,7 +584,8 @@
         }
     ],
     "script_order": [
-        "3108eeae-91fd-4509-9ab9-c905d6ea6e80"
+        "3108eeae-91fd-4509-9ab9-c905d6ea6e80",
+        "dc1d6b38-2533-4d6d-a6ab-a434c7a4b177"
     ],
     "tutorial": ""
 }
