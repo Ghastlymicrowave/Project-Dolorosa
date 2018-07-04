@@ -13,4 +13,6 @@ draw_text(10,100,"windup " + string(obj_player.windup))
 draw_text(10,110,"cooldown " + string(obj_player.cooldown))
 draw_text(10,120,"attacking " + string(obj_player.attacking))
 
+draw_text(obj_player.x + 10, obj_player.y + 120,"speed " + string(obj_player.speed))
+
 draw_text(obj_player.x-20, obj_player.y-80,"Weapontype " + string(obj_player.weapontype))
