@@ -11,6 +11,7 @@ if windup > 0 or combotime > 0 then maxspeed = windupmax + dashtimer^2
 
 if instance_exists(obj_hitboxparent) then maxspeed = 0
 if maxspeed < 0 then maxspeed = 0
+if obj_control.chat =1 then maxspeed =2
 
 if keyboard_check(ord("S")) or keyboard_check(ord("W")) or keyboard_check(ord("D")) or keyboard_check(ord("A")) then timeheld = timeheld + 1
 else if timeheld !=0 { timeheld = timeheld - 5; if timeheld < 0 then timeheld = 0}
