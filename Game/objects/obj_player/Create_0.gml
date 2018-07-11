@@ -11,6 +11,8 @@ hspdtier = 0*/
 
 window_set_fullscreen(1)
 
+depth = 10
+
 dashtimer = 1
 dashcooldown = 0
 dashcount = 0

@@ -15,6 +15,7 @@ draw_text(10,120,"attacking " + string(obj_player.attacking))
 
 draw_text(obj_player.x + 10, obj_player.y - 200,"textcomplete " + string(obj_drawtext.textcomplete))
 draw_text(obj_player.x + 10, obj_player.y - 150,"step " + string(obj_control.step))
+draw_text(obj_player.x + 10, obj_player.y - 130,"convo " + string(obj_control.convo))
 draw_text(obj_player.x + 10, obj_player.y + 120,"speed " + string(obj_player.speed))
 
 draw_text(obj_player.x-20, obj_player.y-80,"Weapontype " + string(obj_player.weapontype))

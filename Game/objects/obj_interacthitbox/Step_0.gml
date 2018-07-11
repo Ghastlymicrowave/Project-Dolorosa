@@ -2,8 +2,9 @@ x=obj_player.x + obj_player.hspeed
 y=obj_player.y + obj_player.vspeed
 
 image_angle = obj_player.dir
+if obj_player.mouseaiming =1 then direction = point_direction(x,y,mouse_x,mouse_y)
+else direction = obj_player.dir
 
-direction = obj_player.dir
 
 
 

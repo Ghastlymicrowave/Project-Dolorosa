@@ -18,3 +18,4 @@ else if row =1 {
 }
 
 if keyboard_check_pressed(ord("R")) then room_restart()
+if keyboard_check_pressed(ord("Y")) then room_speed = 5
