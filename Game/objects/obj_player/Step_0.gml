@@ -1,5 +1,7 @@
 
 
+
+
 if timeheld >= 1 and timeheld < 8 then maxspeed = 8
 else if timeheld >= 15 and timeheld <=45 then maxspeed = 11 + dashtimer*2
 else if timeheld > 45 and timeheld <=60 then maxspeed = 12 + dashtimer*3

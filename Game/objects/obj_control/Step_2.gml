@@ -1,3 +1,6 @@
+
+
+
 if chat = 1 {
 obj_player.x -= obj_player.hspeed
 obj_player.y -= obj_player.vspeed

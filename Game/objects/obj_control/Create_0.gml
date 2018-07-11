@@ -5,3 +5,10 @@ faderate = 0.05
 
 step = -1
 convo = 0
+viewschecked = 0
+
+tick2 = 0
+
+startwview =camera_get_view_width(view_camera[0]) 
+starthview =camera_get_view_height(view_camera[0]) 
+

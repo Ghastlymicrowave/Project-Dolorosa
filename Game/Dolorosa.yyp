@@ -423,6 +423,14 @@
             }
         },
         {
+            "Key": "c439b027-6d9c-405a-95bd-8d33de111b2d",
+            "Value": {
+                "id": "c98b8cc7-bdcc-4a82-8539-d1d2a7ef7d24",
+                "resourcePath": "objects\\obj_movingMouseStuff\\obj_movingMouseStuff.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c5f6e610-8050-4ace-a6f9-b5b171f52aef",
             "Value": {
                 "id": "3e7c5938-d7e4-4da8-b45c-56a7e474af12",

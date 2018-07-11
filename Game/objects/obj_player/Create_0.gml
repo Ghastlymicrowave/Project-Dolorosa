@@ -9,6 +9,8 @@ tier3 = 10
 vspdtier = 0
 hspdtier = 0*/
 
+window_set_fullscreen(1)
+
 dashtimer = 1
 dashcooldown = 0
 dashcount = 0

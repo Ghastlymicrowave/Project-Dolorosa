@@ -12,5 +12,3 @@ if tock = 0 {
 else tock = tock -1
 
 
-	
-

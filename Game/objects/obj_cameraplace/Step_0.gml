@@ -1,7 +1,7 @@
 x = obj_player.x + obj_player.hspeed
 y = obj_player.y + obj_player.vspeed
 
-speed = obj_player.timeheld * 5
+speed = obj_player.timeheld * 2 +100
 
 if speed > 400 then speed = 400
 
