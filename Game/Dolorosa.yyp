@@ -506,7 +506,7 @@
             "Key": "d5eb97e9-f44b-4bc4-b506-99c28a90af5e",
             "Value": {
                 "id": "3e561109-fdc1-42ef-bf1d-a616813f2b7f",
-                "resourcePath": "sprites\\sprite24\\sprite24.yy",
+                "resourcePath": "sprites\\spr_textarrow\\spr_textarrow.yy",
                 "resourceType": "GMSprite"
             }
         },

@@ -14,7 +14,7 @@ obj_drawtext.text= ""
 if chat = 1{
 	if convo = 4{
 		if step = 1{
-			DrawSumText("SUCC BUTT",2,1)
+			DrawSumText("HAAH",2,1)
 		}
 		else if step = 2{
 			DrawSumText("BUST NUT",2,1)
