@@ -12,7 +12,7 @@ obj_drawtext.text= ""
 
 
 if chat = 1{
-	if convo = 1{
+	if convo = 4{
 		if step = 1{
 			DrawSumText("SUCC BUTT",2,1)
 		}
@@ -23,7 +23,7 @@ if chat = 1{
 			EndConvo()
 			StopDrawingText()
 		}
-	}else if convo = 2{
+	}else if convo = 5{
 		if step = 1{
 			DrawSumText("YA YEET",2,1)
 		}
@@ -34,16 +34,16 @@ if chat = 1{
 			EndConvo()
 			StopDrawingText()
 		}
-	}else if convo = 3{
-		if step = 1{
-			DrawSumText("STOP TALKING TO ME NOW",2,1)
-		}
-		else if step = 2{
-			DrawSumText("ITS GETTING ANNOYING",2,1)
-		}
-		else if step = 3{
-			EndConvo()
-			StopDrawingText()
-		}
+	//}else if convo = 3{
+	//	if step = 1{
+	//		DrawSumText("STOP TALKING TO ME NOW",2,1)
+	//	}
+	//	else if step = 2{
+	//		DrawSumText("ITS GETTING ANNOYING",2,1)
+	//	}
+	//	else if step = 3{
+	//		EndConvo()
+	//		StopDrawingText()
+	//	}
 	}
 	}
