@@ -16,6 +16,7 @@ depth = 10
 dashtimer = 1
 dashcooldown = 0
 dashcount = 0
+dashdir = 0
 
 speedrate = 2
 maxspeed = 12
@@ -38,6 +39,9 @@ windup=-1
 cooldown=0
 timesinceattack = 0
 isheavy = 0
+
+
+
 
 xx=0
 yy=0

@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "122844c6-99c0-429c-8f66-77eda5c3ec6d",
+            "Value": {
+                "id": "5b5b0645-aec2-40a6-8280-aa2fb26f9ff8",
+                "resourcePath": "sprites\\spr_dead\\spr_dead.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1233e2bb-39a1-402a-b1d6-e2ccc83ddf63",
             "Value": {
                 "id": "1011c73a-4f8c-4a6d-8e93-d586d5c1f2f7",
@@ -116,6 +124,14 @@
                 "id": "9387ae89-4403-47cf-a0bb-f6db02d1912f",
                 "resourcePath": "sprites\\spr_indicator\\spr_indicator.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "1fe4b4ca-4b50-4151-92db-00520dfbed19",
+            "Value": {
+                "id": "e1d13382-7042-4fe7-a09b-6a424e17b42e",
+                "resourcePath": "objects\\obj_playerstatuses\\obj_playerstatuses.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -183,14 +199,6 @@
             }
         },
         {
-            "Key": "4d7ccd93-16fe-4812-ac35-9757769d8d72",
-            "Value": {
-                "id": "23627dad-371d-426d-940d-b003bb1fad37",
-                "resourcePath": "objects\\veryshit\\veryshit.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "4d8f3f9d-d7dc-4ebf-8125-1b4b2e50677b",
             "Value": {
                 "id": "5c786e37-b07d-4ff3-991a-92178c36b635",
@@ -203,6 +211,14 @@
             "Value": {
                 "id": "c0f3729d-dbd5-40b4-9aa1-d75c626d5a69",
                 "resourcePath": "objects\\obj_obstacle\\obj_obstacle.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "502a78bd-a49a-48d1-8458-b3b70a2bfebb",
+            "Value": {
+                "id": "f6c6c605-bad9-4ae1-a492-c537abdc17be",
+                "resourcePath": "objects\\obj_enemyHitboxParent\\obj_enemyHitboxParent.yy",
                 "resourceType": "GMObject"
             }
         },
