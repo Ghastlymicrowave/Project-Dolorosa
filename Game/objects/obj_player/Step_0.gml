@@ -23,10 +23,10 @@ if attacking !=1 and obj_playerstatuses.alive =1 {
 vspd = vspd + (keyboard_check(ord("S")) - keyboard_check(ord("W"))) * speedrate
 hspd = hspd + (keyboard_check(ord("D")) - keyboard_check(ord("A"))) * speedrate
 }
-if !keyboard_check(ord("S")) and vspd > 0 then  vspd = vspd -1 
-if !keyboard_check(ord("W")) and vspd < 0 then  vspd = vspd +1 
-if !keyboard_check(ord("A")) and hspd < 0 then  hspd = hspd +1
-if !keyboard_check(ord("D")) and hspd > 0 then  hspd = hspd -1
+if vspd > 0 and ( obj_playerstatuses.alive = 0 or !keyboard_check(ord("S"))) then  vspd = vspd -1 
+if vspd < 0 and ( obj_playerstatuses.alive = 0 or !keyboard_check(ord("W"))) then  vspd = vspd +1 
+if hspd < 0 and ( obj_playerstatuses.alive = 0 or !keyboard_check(ord("A"))) then  hspd = hspd +1
+if hspd > 0 and ( obj_playerstatuses.alive = 0 or !keyboard_check(ord("D"))) then  hspd = hspd -1
 
 if hspd > maxspeed then hspd = maxspeed
 else if hspd < -maxspeed then hspd = -maxspeed

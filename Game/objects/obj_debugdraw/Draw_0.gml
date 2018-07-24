@@ -12,6 +12,7 @@ draw_text(10,90,"combotime " + string(obj_player.combotime))
 draw_text(10,100,"windup " + string(obj_player.windup))
 draw_text(10,110,"cooldown " + string(obj_player.cooldown))
 draw_text(10,120,"attacking " + string(obj_player.attacking))
+draw_text(10,140,"invultime " + string(obj_playerstatuses.invulTime))
 
 draw_text(obj_player.x + 10, obj_player.y - 200,"textcomplete " + string(obj_drawtext.textcomplete))
 draw_text(obj_player.x + 10, obj_player.y - 150,"step " + string(obj_control.step))
@@ -19,3 +20,8 @@ draw_text(obj_player.x + 10, obj_player.y - 130,"convo " + string(obj_control.co
 draw_text(obj_player.x + 10, obj_player.y + 120,"speed " + string(obj_player.speed))
 
 draw_text(obj_player.x-20, obj_player.y-80,"Weapontype " + string(obj_player.weapontype))
+
+draw_text(obj_player.x - 120, obj_player.y - 50,"cameraspd " + string(obj_camerafollwing.speed))
+draw_text(obj_player.x - 120, obj_player.y - 10,"cameraplacespd " + string(obj_cameraplace.speed))
+draw_text(obj_player.x - 120, obj_player.y - 30,"cameradir " + string(obj_camerafollwing.direction))
+draw_text(obj_player.x - 120, obj_player.y + 10,"cameraplacedir " + string(obj_cameraplace.direction))

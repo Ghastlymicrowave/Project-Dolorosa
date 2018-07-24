@@ -34,7 +34,6 @@ y= round(y)
 //stopping paths
 
 if(distance_to_object(obj_player)<50){
-	
 	path_end()	
 
 }
@@ -62,7 +61,6 @@ motion_set(point_direction(obj_player.x,obj_player.y,x,y),tick4*10)
 mp_grid_add_instances(global.grid, obj_enobstacle, true);
 
 if(distance_to_object(obj_player)>50&&tick<=0&&tick2<=0){
-
   if(mp_grid_path(global.grid, path, x, y, obj_player.x, obj_player.y, 1))
      {
      path_start(path, 3, path_action_stop, 0);

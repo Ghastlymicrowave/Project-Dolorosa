@@ -4,7 +4,14 @@ y = obj_player.y + obj_player.vspeed
 //speed = obj_player.timeheld * 2 +100
 xviewcenter = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0])/2
 yviewcenter = camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0])/2
-speed = point_distance(xviewcenter,yviewcenter,mouse_x,mouse_y)
+xwindowcenter = window_get_x() + window_get_width() /2
+ywindowcenter = window_get_y() + window_get_height() /2
+cursorx = window_mouse_get_x()
+cursory = window_mouse_get_y()
+window_mouse_set(50,50)
+speed = point_distance(xwindowcenter,ywindowcenter,cursorx,cursory)
+
+//speed = round(speed)
 if obj_control.chat = 1 {
 	if speed > 50 then speed = 50
 
@@ -24,7 +31,7 @@ y = obj_player.y  - point_distance(0,obj_player.y,0,obj_interactable_test.y)/2
 	}
 }
 if speed > 250 then speed = 250
-if obj_player.mouseaiming = 1 then direction = point_direction(xviewcenter,yviewcenter,mouse_x,mouse_y)
+if obj_player.mouseaiming = 1 { direction = point_direction(xwindowcenter,ywindowcenter,cursorx,cursory)}
 else direction = obj_player.dir
 if speed = 0{
 	direction = 0
