@@ -35,9 +35,23 @@ y= round(y)
 
 if(distance_to_object(obj_player)<50){
 	path_end()	
+	
+	
 
 }
 
+if(distance_to_object(obj_player)<100){
+	// this is where an attack would go
+	if warmup = -1 then warmup = 15
+
+
+}
+
+if warmup = 0 {
+instance_create_depth(x,y,0,obj_enemymidhitbox)	
+}
+
+if warmup != -1 then warmup = warmup -1
 //dodging
 
 /*

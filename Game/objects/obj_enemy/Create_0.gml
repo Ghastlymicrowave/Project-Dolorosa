@@ -3,6 +3,7 @@
 depth = 0
 //comments are variable descriptions
 
+warmup = -1
 
 knockback = 0
 //momentum variable for knockback

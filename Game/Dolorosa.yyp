@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "234ff719-41bb-48ce-8a2b-352519c631ed",
+            "Value": {
+                "id": "01001100-cf9d-4878-9517-0997e645e905",
+                "resourcePath": "scripts\\enemyAttack\\enemyAttack.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "2956e46d-3996-40c2-aa29-519e3d30b528",
             "Value": {
                 "id": "9ff7f618-0190-4d55-809b-6257d9fab267",
@@ -399,6 +407,14 @@
             }
         },
         {
+            "Key": "a516e4c5-83d5-4d0c-981f-c49470f38dc6",
+            "Value": {
+                "id": "37be6020-c5ed-43e5-b973-b501a3059a94",
+                "resourcePath": "objects\\obj_enemymidhitbox\\obj_enemymidhitbox.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a5458dac-3d5f-41ec-bdab-d30c95e3cc06",
             "Value": {
                 "id": "0a2fb32c-5e94-4fa8-8ec0-41ce39751956",
@@ -636,7 +652,8 @@
         "dc1d6b38-2533-4d6d-a6ab-a434c7a4b177",
         "e42d94b9-115c-44fc-a8d8-6b960c3ddc24",
         "12c673be-38b3-41f2-8b23-04bcdad3102b",
-        "2b6567b9-7052-49d9-90a7-47bcba209efe"
+        "2b6567b9-7052-49d9-90a7-47bcba209efe",
+        "234ff719-41bb-48ce-8a2b-352519c631ed"
     ],
     "tutorial": ""
 }

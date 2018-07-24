@@ -8,7 +8,6 @@ xwindowcenter = window_get_x() + window_get_width() /2
 ywindowcenter = window_get_y() + window_get_height() /2
 cursorx = window_mouse_get_x()
 cursory = window_mouse_get_y()
-window_mouse_set(50,50)
 speed = point_distance(xwindowcenter,ywindowcenter,cursorx,cursory)
 
 //speed = round(speed)
