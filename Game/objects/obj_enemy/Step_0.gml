@@ -45,17 +45,22 @@ if(distance_to_object(obj_player)<100){
 	if warmup = -1 then warmup = 15
 
 
-}
+} else warmup = -1
 
-if warmup = 0 {
+if warmup = 0 and cooldown = 0{
 	
 hitboxid= instance_create_depth(-100,-100,0,obj_enemyhitbox)
 hitboxid.target = id
 hitboxid.image_index = spr_midhitbox
-}
+hitboxid.damage=10
+hitboxid.dir = point_direction(x,y,obj_player.x,obj_player.y)
 
+cooldown = 30
+
+}
+if cooldown != 0 then cooldown = cooldown -1
 if warmup != -1 then warmup = warmup -1
-//dodging
+//dodgingd
 
 /*
 if(obj_player.windup>0&&distance_to_object(obj_player)<200){path_end();

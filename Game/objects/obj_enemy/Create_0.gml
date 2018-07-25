@@ -3,7 +3,7 @@
 depth = 0
 //comments are variable descriptions
 
-
+cooldown=0
 warmup = -1
 
 knockback = 0
