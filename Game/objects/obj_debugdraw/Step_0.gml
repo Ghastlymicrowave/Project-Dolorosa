@@ -19,3 +19,5 @@ else if row =1 {
 
 if keyboard_check_pressed(ord("R")) then room_restart()
 if keyboard_check_pressed(ord("Y")) then room_speed = 5
+if keyboard_check(ord("H")) then tick = tick - 0.01
+layer_background_alpha(layer_background_get_id(layer_get_id("Background")),tick)
