@@ -1,14 +1,14 @@
 {
-    "id": "a516e4c5-83d5-4d0c-981f-c49470f38dc6",
+    "id": "4d8f3f9d-d7dc-4ebf-8125-1b4b2e50677b",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_enemymidhitbox",
+    "name": "obj_playerhitbox",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "502a78bd-a49a-48d1-8458-b3b70a2bfebb",
+    "parentObjectId": "e8e6146d-bb7e-4b24-8448-928f3174ce5e",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,

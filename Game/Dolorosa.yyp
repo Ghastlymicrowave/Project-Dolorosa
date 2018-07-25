@@ -207,18 +207,10 @@
             }
         },
         {
-            "Key": "48a36e19-1f42-4dc2-abdf-3d87292386cf",
-            "Value": {
-                "id": "ceee339b-62b4-42bf-88a3-e131a7f65c63",
-                "resourcePath": "objects\\obj_smlhitbox\\obj_smlhitbox.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "4d8f3f9d-d7dc-4ebf-8125-1b4b2e50677b",
             "Value": {
                 "id": "5c786e37-b07d-4ff3-991a-92178c36b635",
-                "resourcePath": "objects\\obj_midhitbox\\obj_midhitbox.yy",
+                "resourcePath": "objects\\obj_playerhitbox\\obj_playerhitbox.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -343,14 +335,6 @@
             }
         },
         {
-            "Key": "742831dd-6316-469c-902e-aedf05b22333",
-            "Value": {
-                "id": "53486132-a4e6-4649-ab7f-d396619ecf2f",
-                "resourcePath": "objects\\obj_smlthinhitbox\\obj_smlthinhitbox.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "7bf5d3f8-2342-4c11-89eb-256f32ec8a66",
             "Value": {
                 "id": "0677d3ef-007f-44c1-a6e8-dc68d5126f56",
@@ -410,7 +394,7 @@
             "Key": "a516e4c5-83d5-4d0c-981f-c49470f38dc6",
             "Value": {
                 "id": "37be6020-c5ed-43e5-b973-b501a3059a94",
-                "resourcePath": "objects\\obj_enemymidhitbox\\obj_enemymidhitbox.yy",
+                "resourcePath": "objects\\obj_enemyhitbox\\obj_enemyhitbox.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -444,14 +428,6 @@
                 "id": "af7d520a-610d-422b-8ddc-70e8235ca6e8",
                 "resourcePath": "sprites\\spr_upM\\spr_upM.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "b6664590-a63a-4fb4-8749-302c149c382b",
-            "Value": {
-                "id": "f4f12628-ab5c-426a-8f80-4d153386912d",
-                "resourcePath": "objects\\obj_midlonghitbox\\obj_midlonghitbox.yy",
-                "resourceType": "GMObject"
             }
         },
         {

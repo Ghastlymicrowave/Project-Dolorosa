@@ -146,80 +146,110 @@ if windup = 0 and obj_playerstatuses.alive = 1 {
 	if isheavy=0 {
 		//				Weapon 1, Curved sword moveset
 	if weapontype=1 {
-		if combo = 0 {instance_create_depth(-100,-100,1,obj_midhitbox); combo = 1; combotime = 35; cooldown = 11; obj_midhitbox.time=6}
-		else if combo = 1 {instance_create_depth(-100,-100,1,obj_midhitbox); combo = 2; combotime = 35; cooldown = 11; obj_midhitbox.time=6}
-		else if combo = 2 {instance_create_depth(-100,-100,1,obj_midhitbox); combo = 3; combotime = 35; cooldown = 11; obj_midhitbox.time=6}
-		else if combo = 3 {instance_create_depth(-100,-100,1,obj_midhitbox); combo = 0; combotime = 1; cooldown = 32; obj_midhitbox.time=6}
+		if combo = 0 {instance_create_depth(-100,-100,1,obj_playerhitbox); combo = 1; combotime = 35; cooldown = 11}
+		else if combo = 1 {instance_create_depth(-100,-100,1,obj_playerhitbox); combo = 2; combotime = 35; cooldown = 11}
+		else if combo = 2 {instance_create_depth(-100,-100,1,obj_playerhitbox); combo = 3; combotime = 35; cooldown = 11}
+		else if combo = 3 {instance_create_depth(-100,-100,1,obj_playerhitbox); combo = 0; combotime = 1; cooldown = 32}
+		obj_playerhitbox.time=3
+		obj_playerhitbox.sprite_index=spr_midhitbox
 		}
 		//				Weapon 2, Fist weapons moveset
 	else if weapontype=2 {
-		if combo = 0 {instance_create_depth(-100,-100,1,obj_smlhitbox); combo = 1; combotime = 35; cooldown = 9; obj_smlhitbox.time=3}
-		else if combo = 1 {instance_create_depth(-100,-100,1,obj_smlhitbox); combo = 2; combotime = 35; cooldown = 9; obj_smlhitbox.time=3}
-		else if combo = 2 {instance_create_depth(-100,-100,1,obj_smlhitbox); combo = 3; combotime = 35; cooldown = 9; obj_smlhitbox.time=3}
-		else if combo = 3 {instance_create_depth(-100,-100,1,obj_smlhitbox); combo = 4; combotime = 35; cooldown = 9; obj_smlhitbox.time=3}
-		else if combo = 4 {instance_create_depth(-100,-100,1,obj_smlhitbox); combo = 0; combotime = 1; cooldown = 28; obj_smlhitbox.time=3}
+		if combo = 0 {instance_create_depth(-100,-100,1,obj_playerhitbox); combo = 1; combotime = 35; cooldown = 9}
+		else if combo = 1 {instance_create_depth(-100,-100,1,obj_playerhitbox); combo = 2; combotime = 35; cooldown = 9}
+		else if combo = 2 {instance_create_depth(-100,-100,1,obj_playerhitbox); combo = 3; combotime = 35; cooldown = 9}
+		else if combo = 3 {instance_create_depth(-100,-100,1,obj_playerhitbox); combo = 4; combotime = 35; cooldown = 9}
+		else if combo = 4 {instance_create_depth(-100,-100,1,obj_playerhitbox); combo = 0; combotime = 1; cooldown = 28}
+		obj_playerhitbox.time=3
+		obj_playerhitbox.sprite_index=spr_smallhitbox
 		}
 		//				Weapon 3, dagger moveset
 	else if weapontype=3 {
-		if combo = 0 {instance_create_depth(-100,-100,1,obj_smlhitbox); combo = 1; combotime = 35; cooldown = 8; obj_smlhitbox.time=3}
-		else if combo = 1 {instance_create_depth(-100,-100,1,obj_smlhitbox); combo = 2; combotime = 35; cooldown = 8; obj_smlhitbox.time=3}
-		else if combo = 2 {instance_create_depth(-100,-100,1,obj_smlhitbox); combo = 0; combotime = 1; cooldown = 32; obj_smlhitbox.time=3}
+		if combo = 0 {instance_create_depth(-100,-100,1,obj_playerhitbox); combo = 1; combotime = 35; cooldown = 8}
+		else if combo = 1 {instance_create_depth(-100,-100,1,obj_playerhitbox); combo = 2; combotime = 35; cooldown = 8}
+		else if combo = 2 {instance_create_depth(-100,-100,1,obj_playerhitbox); combo = 0; combotime = 1; cooldown = 32}
+		obj_playerhitbox.time=3
+		obj_playerhitbox.sprite_index=spr_smallhitbox
 		}
 		//				Weapon 4, Rapier moveset
 	else if weapontype=4 {
-		if combo = 0 {instance_create_depth(-100,-100,1,obj_smlthinhitbox); combo = 1; combotime = 35; cooldown = 11; obj_smlthinhitbox.time=5}
-		else if combo = 1 {instance_create_depth(-100,-100,1,obj_smlthinhitbox); combo = 2; combotime = 35; cooldown = 11; obj_smlthinhitbox.time=5}
-		else if combo = 2 {instance_create_depth(-100,-100,1,obj_smlthinhitbox); combo = 3; combotime = 35; cooldown = 11; obj_smlthinhitbox.time=5}
-		else if combo = 3 {instance_create_depth(-100,-100,1,obj_smlthinhitbox); combo = 0; combotime = 1; cooldown = 30; obj_smlthinhitbox.time=5}
+		if combo = 0 {instance_create_depth(-100,-100,1,obj_playerhitbox); combo = 1; combotime = 35; cooldown = 11}
+		else if combo = 1 {instance_create_depth(-100,-100,1,obj_playerhitbox); combo = 2; combotime = 35; cooldown = 11}
+		else if combo = 2 {instance_create_depth(-100,-100,1,obj_playerhitbox); combo = 3; combotime = 35; cooldown = 11}
+		else if combo = 3 {instance_create_depth(-100,-100,1,obj_playerhitbox); combo = 0; combotime = 1; cooldown = 30}
+		obj_playerhitbox.sprite_index=spr_smallthinhitbox
+		obj_playerhitbox.time=5
 		}
 	//					Weapon 5, Hand Axe moveset
 	else if weapontype=5 {
-		if combo = 0 {instance_create_depth(-100,-100,1,obj_midhitbox); combo = 1; combotime = 35; cooldown=12; obj_midhitbox.time=8}
-		else if combo = 1 {instance_create_depth(-100,-100,1,obj_midhitbox); combo = 2; combotime = 35; cooldown=12; obj_midhitbox.time=8}
-		else if combo = 2 {instance_create_depth(-100,-100,1,obj_midhitbox); combo = 0; cooldown = 45; combotime=1; obj_midhitbox.time=8}
+		if combo = 0 {instance_create_depth(-100,-100,1,obj_playerhitbox); combo = 1; combotime = 35; cooldown=12}
+		else if combo = 1 {instance_create_depth(-100,-100,1,obj_playerhitbox); combo = 2; combotime = 35; cooldown=12}
+		else if combo = 2 {instance_create_depth(-100,-100,1,obj_playerhitbox); combo = 0; cooldown = 45; combotime=1}
+		obj_playerhitbox.time=8
+		obj_playerhitbox.sprite_index=spr_midhitbox
 		}
 		//				Weapon 6, Shortsword moveset
 	else if weapontype=6 {
 		
-		if combo = 0 {instance_create_depth(-100,-100,1,obj_midhitbox); combo = 1; combotime = 35; cooldown=11; obj_midhitbox.time=5}
-		else if combo = 1 {instance_create_depth(-100,-100,1,obj_midhitbox); combo = 2; combotime = 35; cooldown=11; obj_midhitbox.time=5}
-		else if combo = 2 {instance_create_depth(-100,-100,1,obj_midhitbox); combo = 3; combotime = 35; cooldown=11; obj_midhitbox.time=5}
-		else if combo = 3 {instance_create_depth(-100,-100,1,obj_midhitbox); combo = 4; cooldown = 40; combotime=10; obj_midhitbox.sprite_index = spr_smallthinhitbox; obj_midhitbox.time=8}	
-		}
+		if combo = 0 {instance_create_depth(-100,-100,1,obj_playerhitbox); combo = 1; combotime = 35; cooldown=11}
+		else if combo = 1 {instance_create_depth(-100,-100,1,obj_playerhitbox); combo = 2; combotime = 35; cooldown=11}
+		else if combo = 2 {instance_create_depth(-100,-100,1,obj_playerhitbox); combo = 3; combotime = 35; cooldown=11}
+		else if combo = 3 {instance_create_depth(-100,-100,1,obj_playerhitbox); cooldown = 40; combotime=10; obj_playerhitbox.sprite_index = spr_smallthinhitbox}	
+		if combo = 3 {
+			obj_playerhitbox.time =8
+			obj_playerhitbox.sprite_index=spr_smallthinhitbox 
+			}	else {	
+			obj_playerhitbox.time =5
+			obj_playerhitbox.sprite_index = spr_midhitbox 
+			}
+	}
 		//				Weapon 7, Flail moveset
 	else if weapontype=7 {
-		if combo = 0 {instance_create_depth(-100,-100,1,obj_midhitbox); combo = 1; combotime = 35; cooldown=14; obj_midhitbox.time=6}
-		else if combo = 1 {instance_create_depth(-100,-100,1,obj_midhitbox); combo = 0; cooldown = 25; combotime=1; obj_midhitbox.time=6}
+		if combo = 0 {instance_create_depth(-100,-100,1,obj_playerhitbox); combo = 1; combotime = 35; cooldown=14}
+		else if combo = 1 {instance_create_depth(-100,-100,1,obj_playerhitbox); combo = 0; cooldown = 25; combotime=1}
+		obj_playerhitbox.time=6
+		obj_playerhitbox.sprite_index=spr_midhitbox
 	}
 	//					Weapon 8, big hammer and stuff like it
 	else if weapontype=8 {
-		if combo = 0 {instance_create_depth(-100,-100,1,obj_midhitbox); combo = 1; combotime = 35; cooldown=16; obj_midhitbox.time=10}
-		else if combo = 1 {instance_create_depth(-100,-100,1,obj_midhitbox); combo = 2; combotime = 35; cooldown=16; obj_midhitbox.time=10}
-		else if combo = 2 {instance_create_depth(-100,-100,1,obj_midhitbox); combo = 0; cooldown = 30; combotime=1; obj_midhitbox.time=10}
+		if combo = 0 {instance_create_depth(-100,-100,1,obj_playerhitbox); combo = 1; combotime = 35; cooldown=16}
+		else if combo = 1 {instance_create_depth(-100,-100,1,obj_playerhitbox); combo = 2; combotime = 35; cooldown=16}
+		else if combo = 2 {instance_create_depth(-100,-100,1,obj_playerhitbox); combo = 0; cooldown = 30; combotime=1}
+		obj_playerhitbox.time=10
+		obj_playerhitbox.sprite_index=spr_midhitbox
 	}
 	//					Weapon 9, Warpick
 	else if weapontype=9 {
 		
-		if combo = 0 {instance_create_depth(-100,-100,1,obj_smlhitbox); combo = 1; combotime = 35; cooldown=10; obj_smlhitbox.time=5}
-		else if combo = 1 {instance_create_depth(-100,-100,1,obj_smlhitbox); combo = 2; combotime = 35; cooldown=10; obj_smlhitbox.time=5}
-		else if combo = 2 {instance_create_depth(-100,-100,1,obj_smlhitbox); combo = 3; combotime = 35; cooldown=10; obj_smlhitbox.time=5}
-		else if combo = 3 {instance_create_depth(-100,-100,1,obj_smlhitbox); combo = 4; cooldown = 40; combotime=10; obj_smlhitbox.time=5}	
+		if combo = 0 {instance_create_depth(-100,-100,1,obj_playerhitbox); combo = 1; combotime = 35; cooldown=10}
+		else if combo = 1 {instance_create_depth(-100,-100,1,obj_playerhitbox); combo = 2; combotime = 35; cooldown=10}
+		else if combo = 2 {instance_create_depth(-100,-100,1,obj_playerhitbox); combo = 3; combotime = 35; cooldown=10}
+		else if combo = 3 {instance_create_depth(-100,-100,1,obj_playerhitbox); combo = 4; cooldown = 40; combotime=10}	
+		obj_playerhitbox.time=5
+		obj_playerhitbox.sprite_index=spr_smallhitbox
 	}
 	//					Weapon 10, spear
 	else if weapontype=10 {
 		
-		if combo = 0 {instance_create_depth(-100,-100,1,obj_midlonghitbox); combo = 1; combotime = 35; cooldown=10; obj_midlonghitbox.time=5; obj_midlonghitbox.speed=90}
-		else if combo = 1 {instance_create_depth(-100,-100,1,obj_midlonghitbox); combo = 2; combotime = 35; cooldown=10; obj_midlonghitbox.time=5; obj_midlonghitbox.speed=90}
-		else if combo = 2 {instance_create_depth(-100,-100,1,obj_midlonghitbox); combo = 3; combotime = 35; cooldown=10; obj_midlonghitbox.time=5; obj_midlonghitbox.speed=90}
-		else if combo = 3 {instance_create_depth(-100,-100,1,obj_midlonghitbox); combo = 4; cooldown = 40; combotime=10; obj_midlonghitbox.time=5; obj_midlonghitbox.speed=90}	
+		if combo = 0 {instance_create_depth(-100,-100,1,obj_playerhitbox); combo = 1; combotime = 35; cooldown=10}
+		else if combo = 1 {instance_create_depth(-100,-100,1,obj_playerhitbox); combo = 2; combotime = 35; cooldown=10}
+		else if combo = 2 {instance_create_depth(-100,-100,1,obj_playerhitbox); combo = 3; combotime = 35; cooldown=10}
+		else if combo = 3 {instance_create_depth(-100,-100,1,obj_playerhitbox); combo = 4; cooldown = 40; combotime=10}	
+		obj_playerhitbox.time=5
+		obj_playerhitbox.sprite_index=spr_midlonghitbox
+		obj_playerhitbox.speed=90
+
 	}
 	
 	//					Weapon 11, lance
 	else if weapontype=11 {
 		
-		if combo = 0 {instance_create_depth(-100,-100,1,obj_midlonghitbox); combo = 1; combotime = 35; cooldown=24; obj_midlonghitbox.time=11; obj_midlonghitbox.speed=100}
-		else if combo = 1 {instance_create_depth(-100,-100,1,obj_midlonghitbox); combo = 2; combotime = 35; cooldown=24; obj_midlonghitbox.time=11; obj_midlonghitbox.speed=100}
-		else if combo = 2 {instance_create_depth(-100,-100,1,obj_midlonghitbox); combo = 3; cooldown = 45; combotime=10; obj_midlonghitbox.time=11; obj_midlonghitbox.speed=100}	
+		if combo = 0 {instance_create_depth(-100,-100,1,obj_playerhitbox); combo = 1; combotime = 35; cooldown=24}
+		else if combo = 1 {instance_create_depth(-100,-100,1,obj_playerhitbox); combo = 2; combotime = 35; cooldown=24}
+		else if combo = 2 {instance_create_depth(-100,-100,1,obj_playerhitbox); combo = 3; cooldown = 45; combotime=10}	
+		obj_playerhitbox.time=11
+		obj_playerhitbox.sprite_index=spr_midlonghitbox
+		obj_playerhitbox.speed=100
 	}
 	
 	

@@ -48,7 +48,10 @@ if(distance_to_object(obj_player)<100){
 }
 
 if warmup = 0 {
-instance_create_depth(x,y,0,obj_enemymidhitbox)	
+	
+hitboxid= instance_create_depth(-100,-100,0,obj_enemyhitbox)
+hitboxid.target = id
+hitboxid.image_index = spr_midhitbox
 }
 
 if warmup != -1 then warmup = warmup -1

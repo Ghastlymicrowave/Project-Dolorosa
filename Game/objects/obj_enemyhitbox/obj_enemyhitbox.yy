@@ -1,14 +1,14 @@
 {
-    "id": "b6664590-a63a-4fb4-8749-302c149c382b",
+    "id": "a516e4c5-83d5-4d0c-981f-c49470f38dc6",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_midlonghitbox",
+    "name": "obj_enemyhitbox",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "e8e6146d-bb7e-4b24-8448-928f3174ce5e",
+    "parentObjectId": "502a78bd-a49a-48d1-8458-b3b70a2bfebb",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "15f7e108-bec9-48c6-8e7c-1bc413f3a919",
+    "spriteId": "5d424a33-bb1b-42f1-8130-012af44ffa39",
     "visible": true
 }
