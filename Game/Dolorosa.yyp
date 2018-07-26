@@ -583,6 +583,14 @@
             }
         },
         {
+            "Key": "e7df1091-cae0-4def-b945-c28f76ff8055",
+            "Value": {
+                "id": "ff6d0933-5b05-4574-a0ae-c6757e218aa9",
+                "resourcePath": "scripts\\centerCamBetweenPlayerAndObj\\centerCamBetweenPlayerAndObj.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e8e6146d-bb7e-4b24-8448-928f3174ce5e",
             "Value": {
                 "id": "192a2983-4f23-45e1-b565-ab37bb8378b2",
@@ -629,7 +637,8 @@
         "e42d94b9-115c-44fc-a8d8-6b960c3ddc24",
         "12c673be-38b3-41f2-8b23-04bcdad3102b",
         "2b6567b9-7052-49d9-90a7-47bcba209efe",
-        "234ff719-41bb-48ce-8a2b-352519c631ed"
+        "234ff719-41bb-48ce-8a2b-352519c631ed",
+        "e7df1091-cae0-4def-b945-c28f76ff8055"
     ],
     "tutorial": ""
 }

@@ -40,7 +40,7 @@ vspeed = vspd
 
 //Dash
 
-if((keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_shift)) and dashcooldown <= 0){
+if((keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_shift)) and dashcooldown <= 0 and obj_playerstatuses.alive =1){
 	dashdir = dir
 	dashtimer = 15
 	dashcooldown = 20

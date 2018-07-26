@@ -27,7 +27,7 @@ motion_set(kndir,round(knockback)/4)
 }
 
 if(tick>0){tick --}
-if(tick2>0){tick2 --}else{tick2=30}
+if(tick2>0){tick2 --}else{tick2=10}
 x= round(x)
 y= round(y)
 
@@ -95,3 +95,4 @@ if(y<0){y=0}
 if(x>room_width){x=room_width}
 if(y>room_height){y=room_height}
 
+if obj_control.chat = 1 then speed = 0

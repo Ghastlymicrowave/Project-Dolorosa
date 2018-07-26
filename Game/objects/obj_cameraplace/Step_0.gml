@@ -14,20 +14,8 @@ speed = point_distance(xwindowcenter,ywindowcenter,cursorx,cursory)
 if obj_control.chat = 1 {
 	if speed > 50 then speed = 50
 
-	if obj_control.convo = 1 or obj_control.convo = 2 obj_control.convo = 3{
-		if obj_interactable_test.x > x {
-x = obj_player.x  + point_distance(obj_player.x,0,obj_interactable_test.x,0)/2
-		} else {
-x = obj_player.x  - point_distance(obj_player.x,0,obj_interactable_test.x,0)/2			
-		}
-	
-	
-	    if obj_interactable_test.y > y {
-y = obj_player.y  + point_distance(0,obj_player.y,0,obj_interactable_test.y)/2
-		} else {
-y = obj_player.y  - point_distance(0,obj_player.y,0,obj_interactable_test.y)/2
-		}
-	}
+	if obj_control.convo=4 then centerCamBetweenPlayerAndObj(obj_interactable_test)
+	else if obj_control.convo=5 then centerCamBetweenPlayerAndObj(obj_interactable_test2)
 }
 if speed > 250 then speed = 250
 if obj_player.mouseaiming = 1 { direction = point_direction(xwindowcenter,ywindowcenter,cursorx,cursory)}
