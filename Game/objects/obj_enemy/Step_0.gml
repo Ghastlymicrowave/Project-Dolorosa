@@ -47,6 +47,12 @@ if(distance_to_object(obj_player)<100){
 
 } else warmup = -1
 
+if obj_control.chat != 1 {
+if cooldown != 0 then cooldown = cooldown -1
+if warmup != -1 then warmup = warmup -1
+}
+
+
 if warmup = 0 and cooldown = 0{
 	
 hitboxid= instance_create_depth(-100,-100,0,obj_enemyhitbox)
@@ -58,8 +64,7 @@ hitboxid.dir = point_direction(x,y,obj_player.x,obj_player.y)
 cooldown = 30
 
 }
-if cooldown != 0 then cooldown = cooldown -1
-if warmup != -1 then warmup = warmup -1
+
 //dodgingd
 
 /*
