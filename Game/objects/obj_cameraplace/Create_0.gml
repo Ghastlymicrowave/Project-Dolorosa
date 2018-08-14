@@ -6,7 +6,7 @@ tick2 =2
 
 camerasenitivity = 3
 // lower is more senitive
-modifier = 1
+modifier = .75
 
 verticaloffset = 0
 horizoffset = 0
