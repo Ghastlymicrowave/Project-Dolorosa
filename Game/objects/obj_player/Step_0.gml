@@ -18,7 +18,7 @@ if obj_control.chat =1 then maxspeed =2
 if keyboard_check(ord("S")) or keyboard_check(ord("W")) or keyboard_check(ord("D")) or keyboard_check(ord("A")) then timeheld = timeheld + 1
 else if timeheld !=0 { timeheld = timeheld - 5; if timeheld < 0 then timeheld = 0}
 
-if attacking !=1 and obj_playerstatuses.alive =1 {
+if /*attacking !=1 and*/ obj_playerstatuses.alive =1 {
 	
 vspd = vspd + (keyboard_check(ord("S")) - keyboard_check(ord("W"))) * speedrate
 hspd = hspd + (keyboard_check(ord("D")) - keyboard_check(ord("A"))) * speedrate
@@ -126,14 +126,46 @@ if attacking != 1 {
 
 }
 //      setting sprites
-if 70 > dir and dir > 30 then sprite_index = spr_upR
-else if 110 > dir and dir >= 70 then sprite_index = spr_upM
-else if 150 > dir and dir >= 110 then sprite_index = spr_upL
-else if dir >= 150 and dir <=210 then sprite_index = spr_L
-else if 250 > dir and dir > 210 then sprite_index = spr_downL
-else if 290 > dir and dir >= 250 then sprite_index = spr_downM
-else if 330 > dir and dir >= 290 then sprite_index = spr_downR
-else if dir <= 30 or dir >= 330 then sprite_index = spr_R
+if 70 > dir and dir > 30 {  
+	if speed > 1 then sprite_index= spr_upRWalk 
+	else if attacking !=0 then sprite_index = spr_upRHit 
+	else sprite_index = spr_upR}
+
+else if 110 > dir and dir >= 70 { 
+	if speed > 1 then sprite_index= spr_upMWalk 
+	else if attacking !=0 then sprite_index = spr_upMHit 
+	else sprite_index = spr_upM}
+	
+else if 150 > dir and dir >= 110 {
+	if speed > 1 then sprite_index= spr_upLWalk
+	else if attacking !=0 then sprite_index = spr_upLHit 
+	else sprite_index = spr_upL}
+	
+else if dir >= 150 and dir <=210 {
+	if speed > 1 then sprite_index= spr_LWalk 
+	else if attacking !=0 then sprite_index = spr_LHit 
+	else sprite_index = spr_L}
+	
+else if 250 > dir and dir > 210 { 
+	if speed > 1 then sprite_index= spr_downLWalk 
+	else if attacking !=0 then sprite_index = spr_downLHit 
+	else sprite_index = spr_downL}
+
+else if 290 > dir and dir >= 250 { 
+	if speed > 1 then sprite_index= spr_downMWalk 
+	else if attacking !=0 then sprite_index = spr_downMHit
+	else sprite_index = spr_downM}
+
+else if 330 > dir and dir >= 290 { 
+	if speed > 1 then sprite_index= spr_downRWalk 
+	else if attacking !=0 then sprite_index = spr_downRHit
+	else sprite_index = spr_downR}
+
+else if dir <= 30 or dir >= 330 { 
+	if speed > 1 then sprite_index= spr_RWalk 
+	else if attacking !=0 then sprite_index = spr_RHit
+	else sprite_index = spr_R}
+
 
 if obj_playerstatuses.alive = 0 then sprite_index = spr_dead
 

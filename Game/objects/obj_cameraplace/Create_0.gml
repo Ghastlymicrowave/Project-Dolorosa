@@ -6,5 +6,11 @@ tick2 =2
 
 camerasenitivity = 3
 // lower is more senitive
-modifier = .75
+modifier = 1
+
+verticaloffset = 0
+horizoffset = 0
+
+verticalmod = 2
+horizmod = 2
 // higher is further distance from the player

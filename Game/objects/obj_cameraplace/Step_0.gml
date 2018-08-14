@@ -1,14 +1,37 @@
+/*
 x = obj_player.x + obj_player.hspeed
 y = obj_player.y + obj_player.vspeed
+*/
 
 //speed = obj_player.timeheld * 2 +100
-xviewcenter = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0])/2
-yviewcenter = camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0])/2
-xwindowcenter = window_get_x() + window_get_width() /2
-ywindowcenter = window_get_y() + window_get_height() /2
+
+xviewcenter =  window_get_width()/2
+yviewcenter =  window_get_height()/2
+
 cursorx = window_mouse_get_x()
 cursory = window_mouse_get_y()
-speed = point_distance(xwindowcenter,ywindowcenter,cursorx,cursory) /camerasenitivity
+
+//yviewcenter = camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0])/2
+//xviewcenter = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0])/2
+//cursorx = mouse_x
+//cursory = mouse_y
+
+
+
+x = obj_player.x
+y = obj_player.y
+
+//if mouse_x < obj_player.x then x = x + horizoffset* -horizmod
+//else if mouse_x < obj_player.x then x = x + horizoffset* horizmod
+//if mouse_y < obj_player.y then y = y + verticaloffset* -verticalmod
+//else if mouse_y > obj_player.y then y = y + verticaloffset* verticalmod
+
+if cursorx < xviewcenter then x = x + horizoffset* -horizmod
+else if cursorx < xviewcenter then x = x + horizoffset* horizmod
+if cursory < yviewcenter then y = y + verticaloffset* -verticalmod
+else if cursory > yviewcenter then y = y + verticaloffset* verticalmod
+
+speed = point_distance(xviewcenter,yviewcenter,cursorx,cursory) /camerasenitivity
 
 //speed = round(speed)
 if obj_control.chat = 1 {
@@ -18,7 +41,7 @@ if obj_control.chat = 1 {
 	else if obj_control.convo=5 then centerCamBetweenPlayerAndObj(obj_interactable_test2)
 }
 if speed > 250 then speed = 250
-if obj_player.mouseaiming = 1 { direction = point_direction(xwindowcenter,ywindowcenter,cursorx,cursory)}
+if obj_player.mouseaiming = 1 { direction = point_direction(xviewcenter,yviewcenter,cursorx,cursory)}
 else direction = obj_player.dir
 if speed = 0{
 	direction = 0
