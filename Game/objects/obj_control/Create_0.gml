@@ -11,4 +11,8 @@ tick2 = 0
 
 startwview =camera_get_view_width(view_camera[0]) 
 starthview =camera_get_view_height(view_camera[0]) 
+arechoicescreated=false
+selected = false
+choice = -1
 
+canadvancewithE = true

@@ -7,6 +7,7 @@ if place_meeting(x,y,obj_interactableParent){
 		if obj_control.convo = 0 and obj_control.step = 0{
 			if place_meeting(x,y,obj_interactable_test) then StartConvo(obj_interactable_test.convo,1)
 	   else if place_meeting(x,y,obj_interactable_test2) then StartConvo(obj_interactable_test2.convo,1)
+	   else if place_meeting(x,y,obj_interactable_test3) then StartConvo(obj_interactable_test3.convo,1)
 			
 			
 		} 

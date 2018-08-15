@@ -39,6 +39,7 @@ if obj_control.chat = 1 {
 
 	if obj_control.convo=4 then centerCamBetweenPlayerAndObj(obj_interactable_test)
 	else if obj_control.convo=5 then centerCamBetweenPlayerAndObj(obj_interactable_test2)
+	else if obj_control.convo=6 then centerCamBetweenPlayerAndObj(obj_interactable_test3)
 }
 if speed > 250 then speed = 250
 if obj_player.mouseaiming = 1 { direction = point_direction(xviewcenter,yviewcenter,cursorx,cursory)}
