@@ -16,3 +16,6 @@ selected = false
 choice = -1
 
 canadvancewithE = true
+
+ID1=0
+ID2=0

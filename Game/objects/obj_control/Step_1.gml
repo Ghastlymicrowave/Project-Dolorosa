@@ -2,10 +2,8 @@ if step = -1 then step = 0
 
 
 if obj_drawtext.textcomplete = 1 and keyboard_check_pressed(ord("E")) and chat = 1 and canadvancewithE = true{
-step = step + 1	
-obj_drawtext.textcomplete=0
-obj_drawtext.drawing = 0
-} else if obj_drawtext.textcomplete = 0 and keyboard_check_pressed(ord("E")) and chat = 1 {
+	AdvanceStep()
+} else if obj_drawtext.textcomplete = 0 and keyboard_check_pressed(ord("E")) and chat = 1 and canadvancewithE = true{
 obj_drawtext.drawtext = obj_drawtext.text	
 obj_drawtext.text= ""
 }
@@ -36,12 +34,17 @@ if chat = 1{
 		}
 	}else if convo = 6{
 		if step =1{
-			DrawSumText("EATING SUGAR",2,1)
+			DrawSumText("JOHNNY JOHNNY, EATING SUGAR ARE YOU??? HMMMMMMMMMMMM.....",2,1)
 		} 
 		else if step = 3{
+			instance_destroy(ID1)
+			instance_destroy(ID2)
+			ID1=0
+			ID2=0
 			canadvancewithE=true
 			arechoicescreated=false
-			DrawSumText("EATING ",2,1)
+			if choice = 1 then DrawSumText("YOU LITTLE BITCH, I TOLD YOU NOT TO! BACK TO THE DUNGEON WITH YOU!",2,1)
+		    else DrawSumText("GOOD, GOOD, DO NOT EAT THE SUGAR.",2,1)
 			
 			
 		//	if choice = 1 then DrawSumText("YOU LITTLE BITCH I TOLD YOU NOT TO",2,1)
@@ -50,16 +53,21 @@ if chat = 1{
 		} 
 		else if step = 2{
 			canadvancewithE = false
-			DrawSumText("EATING SUGAAAR GEORG",2,1)
+			DrawSumText("",2,1)
 			if arechoicescreated=false {
 				arechoicescreated=true
-				ID1 = instance_create_depth(camera_get_view_x(view_camera[0]) +100 ,camera_get_view_y(view_camera[0])+283,-100,obj_option) 
+				ID1 = instance_create_depth(0,0,-100,obj_option) 
 				ID1.value=1
+				ID1.sprite_index = spr_option_Yes
+				ID2 = instance_create_depth(0,0,-100,obj_option) 
+				ID2.value=2
+				ID2.sprite_index = spr_option_No
 				}
 				
 				
 		}
 		else if step = 4{
+			choice=0
 			EndConvo()
 			StopDrawingText()
 		}

@@ -1,2 +1,3 @@
 value=-1
-obj_control.selected = false
+
+//obj_control.selected = false

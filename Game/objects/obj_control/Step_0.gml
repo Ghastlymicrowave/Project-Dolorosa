@@ -25,3 +25,4 @@ if chat =1{
 if wview != startwview then camera_set_view_size(view_camera[0],wview +widthttogo * .1 ,hview + heighttogo * .1)
 	viewschecked=0
 }
+
