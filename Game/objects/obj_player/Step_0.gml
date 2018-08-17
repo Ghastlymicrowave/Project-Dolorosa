@@ -11,6 +11,7 @@ else if timeheld >= 60 then maxspeed = 13 + dashtimer*4
 
 if windup > 0 or combotime > 0 then maxspeed = windupmax + dashtimer^2
 
+#region movement
 if instance_exists(obj_hitboxparent) then maxspeed = 0
 if maxspeed < 0 then maxspeed = 0
 if obj_control.chat =1 then maxspeed =2
@@ -36,34 +37,28 @@ else if vspd < -maxspeed then vspd = -maxspeed
 hspeed = hspd
 vspeed = vspd
 //repeat(4){
+#endregion
 
-
-//Dash
+#region Dash
 
 if((keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_shift)) and dashcooldown <= 0 and obj_playerstatuses.alive =1){
 	dashdir = dir
-	dashtimer = 15
+	dashtimer = 10
 	dashcooldown = 20
 
 }
 
 if(dashtimer>0){
-
-if dashtimer > 0{ speed = 22 maxspeed = 22}
-
-direction = dashdir
+	if dashtimer > 0{ speed = 22 maxspeed = 22}
+	direction = dashdir
 	dashtimer = dashtimer-1
 	
-	
 }else{
-
 	maxspeed = 12
-
 }
-
 if(dashcooldown>0){dashcooldown=dashcooldown-1}
-
-
+#endregion
+#region movement cont.
 while sqrt(hspeed*hspeed+vspeed*vspeed) > maxspeed 
 {
 if hspeed > 0 then hspeed = hspeed - 1
@@ -73,13 +68,12 @@ else vspeed = vspeed + 1
 }
 
 
-
 if timeheld > maxtimeheld then timeheld = maxtimeheld
-
+#endregion
 // down 270, right 0, left 180, up 90
 
 //Attacks
-
+#region autofire 
 if(autofire = 0){
 
 	attackcondition = mouse_check_button_pressed(attackbutton)
@@ -89,7 +83,8 @@ if(autofire = 0){
 	attackcondition = mouse_check_button(attackbutton)
 
 }
-
+#endregion
+#region set windups
 if windup > -1 {windup = windup -1}
 if attackcondition{
 if attacking =0{
@@ -116,16 +111,14 @@ if attacking != 1 {
 	if cooldown <= 0 {
 		if (keyboard_check(ord("S")) or keyboard_check(ord("W")) or keyboard_check(ord("A")) or keyboard_check(ord("D"))) and speed > 0 then dir = direction} 
 } else {
-	
-	
-	
 	//direction = dir
 	// HEEEEEEEEEEEEEEEEEEEEEEYYYYYYYYY RYAAAAAAAAAAAAAAAAAAAAAAAAAANNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
 	/// INPUT HERE if weapontype = then speed = yaddayadda
 	// to make it so that you dash forward while attacking
 
 }
-//      setting sprites
+#endregion
+#region setting sprites
 if 70 > dir and dir > 30 {  
 	if speed > 1 then sprite_index= spr_upRWalk 
 	else if attacking !=0 then sprite_index = spr_upRHit 
@@ -168,8 +161,8 @@ else if dir <= 30 or dir >= 330 {
 
 
 if obj_playerstatuses.alive = 0 then sprite_index = spr_dead
-
-//attacking
+#endregion
+#region windup = 0 and attacking
 if windup = 0 and obj_playerstatuses.alive = 1 {
 	if mouseaiming = 1 then { dir = point_direction(x,y,mouse_x,mouse_y)
 		//direction = point_direction(x,y,mouse_x,mouse_y);
@@ -288,7 +281,7 @@ if windup = 0 and obj_playerstatuses.alive = 1 {
 	
 }
 }
-
+#endregion
 
 if(combotime != 0){combotime = combotime - 1}else{combo = 0}
 if cooldown < 0 then cooldown = 0
@@ -301,19 +294,8 @@ else timesinceattack = 0
 //Stay within enemy range
 
 
-
-
-
-
-
-
-
-
-
-
-
 // collision
-
+#region collision
 while place_meeting(x+hspeed,y,obj_obstacle) {
 	if hspeed > 0 then hspeed = hspeed -1
 	else hspeed = hspeed +1
@@ -332,3 +314,4 @@ while place_meeting(x+hspeed,y+vspeed,obj_obstacle) {
 	else vspeed = vspeed +1
 
 }
+#endregion
