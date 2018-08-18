@@ -315,3 +315,9 @@ while place_meeting(x+hspeed,y+vspeed,obj_obstacle) {
 
 }
 #endregion
+
+if place_meeting(x+hspeed,y+vspeed,obj_walkingTriggerToTestRoom2) {
+	global.Rm1posX = obj_player.x
+	global.Rm1posY = obj_player.y
+	room=Rm_Test2
+}
