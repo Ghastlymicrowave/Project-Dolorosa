@@ -96,8 +96,50 @@ obj_drawtext.drawing = 1
 		}
 		}
 	#endregion	
-}
-		
+		#region Townperson 1, convo 7
+	else if convo = 7 {
+		if step = 1{
+			DrawSumText("Oh great god, please protect us when they come to burn our homes...",2,2)
+		}
+		else if step = 2{
+			DrawSumText("...",2,3)
+		}
+		else if step = 3{
+			EndConvo()
+			StopDrawingText()
+		}
+	}
+	#endregion
+	#region Townperson 2, convo 8
+	else if convo = 8 {
+		if step = 1{
+			DrawSumText("I don’t have a good feeling about this one. ++++++++++We’ve only been able to fend ‘em off for so long."
+,2,2)
+		}
+		else if step = 2{
+			EndConvo()
+			StopDrawingText()
+		}
+	}
+	
+	#endregion
+	#region Townsperson 3, convo 9
+	else if convo = 9 {
+		if step = 1{
+			DrawSumText("It’s cursed I tell you!",2,2)
+		}
+		else if step = 2{
+			DrawSumText("Oh Christ's wounds,++++++ We’re doomed, we’re all damned to hell++++++ this whole place should’ve been++++ burned down months ago.",2,1)
+		}
+		else if step = 3{
+			EndConvo()
+			StopDrawingText()
+		}
+	}
+	#endregion
+
+
+}	
 	//}else if convo = 3{
 	//	if step = 1{
 	//		DrawSumText("STOP TALKING TO ME NOW",2,1)

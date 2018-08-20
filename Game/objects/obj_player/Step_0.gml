@@ -315,9 +315,14 @@ while place_meeting(x+hspeed,y+vspeed,obj_obstacle) {
 
 }
 #endregion
-
+//if !place_meeting(x+hspeed,y+vspeed,Parent_WalkingTriggerGrouping){
+//	global.Rm1posX = obj_player.x
+//	global.Rm1posY = obj_player.y
+//}
 if place_meeting(x+hspeed,y+vspeed,obj_walkingTriggerToTestRoom2) {
-	global.Rm1posX = obj_player.x
-	global.Rm1posY = obj_player.y
+	global.Rm1posX = x
+	global.Rm1posY = y
+	
 	room=Rm_Test2
 }
+

@@ -151,6 +151,14 @@
             }
         },
         {
+            "Key": "1eb80a7b-ae39-47b3-ad0a-1f29922c65cb",
+            "Value": {
+                "id": "65a8fd70-b09d-4dcc-9dff-97963aa1ecb2",
+                "resourcePath": "objects\\Parent_DoorGrouping\\Parent_DoorGrouping.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1f317473-98e3-4c0c-8854-58ae6ccbe475",
             "Value": {
                 "id": "9387ae89-4403-47cf-a0bb-f6db02d1912f",
@@ -199,6 +207,14 @@
             }
         },
         {
+            "Key": "2510b40f-cf8d-4bc1-bd9c-312bbbbe3120",
+            "Value": {
+                "id": "d8d35632-cecf-4aa7-a13d-94010b4f0da7",
+                "resourcePath": "objects\\obj_text_townsperson2\\obj_text_townsperson2.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "28f3bfcf-8a78-450f-be28-2634bc9caa51",
             "Value": {
                 "id": "256c36e3-55c4-4b42-8113-abdf94780afc",
@@ -244,6 +260,14 @@
                 "id": "0df6efb5-20ac-423d-a447-696f9287cd29",
                 "resourcePath": "sprites\\spr_downLWalk\\spr_downLWalk.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "348d1951-6bba-440e-8b9b-f6702c02d53d",
+            "Value": {
+                "id": "a2d88d06-7d3b-40aa-8e26-9d8a83da520a",
+                "resourcePath": "objects\\Parent_TextGrouping\\Parent_TextGrouping.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -647,6 +671,14 @@
             }
         },
         {
+            "Key": "c378f463-7895-4f1b-ab49-5ec0b1170d87",
+            "Value": {
+                "id": "f3bb3329-1132-48d6-9d15-d57f05c1fbeb",
+                "resourcePath": "objects\\obj_text_townsperson3\\obj_text_townsperson3.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c3c389fb-afcb-44aa-8df8-9824ae12026e",
             "Value": {
                 "id": "455595a7-259b-4776-be75-9ba811c79b68",
@@ -759,6 +791,14 @@
             }
         },
         {
+            "Key": "d68ea609-9ccb-4848-9d41-28948243b031",
+            "Value": {
+                "id": "c0486053-3354-45d6-982e-3c071d224ca7",
+                "resourcePath": "objects\\Parent_WalkingTriggerGrouping\\Parent_WalkingTriggerGrouping.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "da64332f-c42b-4d56-a502-23c3cf78e091",
             "Value": {
                 "id": "41e21e3f-193e-4ca7-b1c4-73fd6410fc83",
@@ -788,6 +828,14 @@
                 "id": "d76eaa10-d1e3-43de-bf7b-cbcc71f48885",
                 "resourcePath": "views\\dd0ad94e-875f-49f4-b68b-95eec15b0fbf.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "defb7923-1b13-409b-b422-bf80b50d4d68",
+            "Value": {
+                "id": "c3700343-04bd-4987-9b65-eac44c6f7663",
+                "resourcePath": "objects\\obj_text_townsperson1\\obj_text_townsperson1.yy",
+                "resourceType": "GMObject"
             }
         },
         {
