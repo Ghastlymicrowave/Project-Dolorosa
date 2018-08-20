@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "1a47efaa-f307-45cf-8686-efb36736125b",
+            "Value": {
+                "id": "96444972-735e-414f-b8ea-cdbd68c9dd62",
+                "resourcePath": "objects\\obj_text_townsperson5\\obj_text_townsperson5.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1b2ad554-ac34-495c-8353-a4fa476fc636",
             "Value": {
                 "id": "47f8bd35-cb57-4a69-8fde-22032fa9dbce",
@@ -471,6 +479,14 @@
             }
         },
         {
+            "Key": "743d540f-cdec-426e-a641-743a16e9e4f3",
+            "Value": {
+                "id": "cb19ae3e-61f2-400b-93b3-f486783f6b38",
+                "resourcePath": "objects\\obj_text_townsperson6\\obj_text_townsperson6.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "755803a7-4ee3-4056-873f-ced12c078f82",
             "Value": {
                 "id": "fe679c1f-0491-42b3-835c-fc9e2d7b717b",
@@ -604,6 +620,14 @@
                 "id": "13380bd5-62b9-4a13-8380-f4c76df97533",
                 "resourcePath": "views\\9fff04e0-965f-44bd-8e63-b43b4a7a55bc.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a47d90a5-76ea-4343-b2ba-f9be73e40bec",
+            "Value": {
+                "id": "079162d9-7b5c-45f4-beb4-89019250d2f7",
+                "resourcePath": "objects\\obj_text_townsperson4\\obj_text_townsperson4.yy",
+                "resourceType": "GMObject"
             }
         },
         {

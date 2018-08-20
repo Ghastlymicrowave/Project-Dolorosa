@@ -99,7 +99,7 @@ obj_drawtext.drawing = 1
 		#region Townperson 1, convo 7
 	else if convo = 7 {
 		if step = 1{
-			DrawSumText("Oh great god, please protect us when they come to burn our homes...",2,2)
+			DrawSumText("Oh great god,++++ please protect us when they come to burn our homes...",2,1)
 		}
 		else if step = 2{
 			DrawSumText("...",2,3)
@@ -113,8 +113,7 @@ obj_drawtext.drawing = 1
 	#region Townperson 2, convo 8
 	else if convo = 8 {
 		if step = 1{
-			DrawSumText("I don’t have a good feeling about this one. ++++++++++We’ve only been able to fend ‘em off for so long."
-,2,2)
+			DrawSumText("I don’t have a good feeling about this one. ++++++++++We’ve only been able to fend ‘em off for so long.",2,1)
 		}
 		else if step = 2{
 			EndConvo()
@@ -126,10 +125,10 @@ obj_drawtext.drawing = 1
 	#region Townsperson 3, convo 9
 	else if convo = 9 {
 		if step = 1{
-			DrawSumText("It’s cursed I tell you!",2,2)
+			DrawSumText("It’s cursed I tell you!",2,1)
 		}
 		else if step = 2{
-			DrawSumText("Oh Christ's wounds,++++++ We’re doomed, we’re all damned to hell++++++ this whole place should’ve been++++ burned down months ago.",2,1)
+			DrawSumText("Oh Angels’ guide me,++++++++++++ We’re doomed,++++++++++ we’re all damned to hell.++++++++++++ This whole place should’ve been++++ burned down months ago.",2,1)
 		}
 		else if step = 3{
 			EndConvo()
@@ -137,8 +136,45 @@ obj_drawtext.drawing = 1
 		}
 	}
 	#endregion
-
-
+	#region Townsperson 4, convo 10
+	else if convo = 10 {
+		if step =1{
+			DrawSumText("The old man doesn’t say anything,+++++++++++++++ he just looks at you with an unexplainable fear in his eyes",1,1)
+		}
+		else if step = 2{
+			EndConvo()
+			StopDrawingText()
+		}
+	}
+	#endregion
+	#region Townsperson 5, convo 11
+	else if convo = 11 {
+		if step =1{
+			DrawSumText("We’re all- just- dead… ++++++++++It’s not...+++++++++++There’s no way we can survive this,+++++++++++++ None.",2,1)
+		}
+		else if step = 2{
+			EndConvo()
+			StopDrawingText()
+		}
+	}
+	#endregion
+	#region Townsperson 6, convo 12
+	else if convo = 12 {
+		if step =1{
+			DrawSumText("What are you staring at me for?+++++++++++++ You won’t find any hope here,++++++++ so p+++i+++s+++s++++++++ o+++f+++f+++.",2,1)
+		}
+		else if step = 2{
+			DrawSumText("It's not like we can do anything anyway.++++++++++ Everyone in this town knows it.",2,1)
+		}
+		else if step = 3{
+			DrawSumText("If you really think we can survive,++++++++++++ then you're either mad,+++++++++++ or blind.",2,1)
+		}
+		else if step = 4{
+			EndConvo()
+			StopDrawingText()
+		}
+	}
+	#endregion
 }	
 	//}else if convo = 3{
 	//	if step = 1{
