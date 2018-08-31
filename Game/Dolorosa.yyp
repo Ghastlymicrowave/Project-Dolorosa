@@ -447,6 +447,14 @@
             }
         },
         {
+            "Key": "69b10d90-8246-4894-a26a-a925b3dcd0a9",
+            "Value": {
+                "id": "089dceef-f433-4725-8895-709adc77e3f0",
+                "resourcePath": "objects\\obj_text_storyguard1\\obj_text_storyguard1.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6c3c1e38-4565-4746-96b6-a266d56caefd",
             "Value": {
                 "id": "b981b4a2-fef8-4b4f-b510-eed8fa829768",
