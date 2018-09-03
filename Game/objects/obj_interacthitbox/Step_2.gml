@@ -1,8 +1,10 @@
 if place_meeting(x,y,obj_interactableParent){ 
 	
-	
-	
-	if place_meeting(x,y,obj_interactableParent){
+		if indicatorID = 0 {
+			indicatorID = instance_create_depth(obj_player.x,obj_player.y-60,-20,obj_indicator)
+			}
+		indicatorID.tick1max=5
+		
 	if keyboard_check_pressed(ord("E")) {
 		if obj_control.convo = 0 and obj_control.step = 0{
 			if place_meeting(x,y,Parent_TextGrouping){
@@ -27,9 +29,17 @@ if place_meeting(x,y,obj_interactableParent){
 			}
 	}
 	}
+	
+}
+else if indicatorID !=0 {
+	indicatorID.tick1max = 1
+	indicatorID.fadeIn1FadeOut0=0
+	if indicatorID.image_alpha < 0.1 { instance_destroy(indicatorID)
+	indicatorID = 0
 	}
 }
-else if instance_exists(obj_indicator) then obj_indicator.boom=1
+//else {
+//	if instance_exists(obj_indicator) then obj_indicator.boom=1}
 
 
 

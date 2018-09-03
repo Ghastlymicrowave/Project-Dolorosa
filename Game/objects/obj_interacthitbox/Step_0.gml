@@ -10,14 +10,18 @@ direction = obj_player.dir
 
 
 
-if place_meeting(x,y,obj_interactableParent){ 
+//if place_meeting(x,y,obj_interactableParent){ 
 	
-	if indicatorexists = 0 {
-		instance_create_depth(x,y+30,-5,obj_indicator)
-		indicatorexists=1
-	}
-}
-else if instance_exists(obj_indicator) then obj_indicator.boom=1
+//	if indicatorID = 0 {
+//		indicatorID = instance_create_depth(x,y+30,-5,obj_indicator)
+//	}
+//}
+//else if !place_meeting(x,y,obj_interactableParent){
+//	instance_destroy(indicatorID)
+//	indicatorID = 0
+//}
+
+//else if instance_exists(obj_indicator) then obj_indicator.boom=1
 
 
 

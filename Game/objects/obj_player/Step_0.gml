@@ -118,7 +118,12 @@ if attacking != 1 {
 
 }
 #endregion
-#region setting sprites
+
+
+
+if obj_control.chat =1 then speed = 0
+
+	#region setting sprites
 if 70 > dir and dir > 30 {  
 	if speed > 1 then sprite_index= spr_upRWalk 
 	else if attacking !=0 then sprite_index = spr_upRHit 
@@ -162,6 +167,8 @@ else if dir <= 30 or dir >= 330 {
 
 if obj_playerstatuses.alive = 0 then sprite_index = spr_dead
 #endregion
+
+
 #region windup = 0 and attacking
 if windup = 0 and obj_playerstatuses.alive = 1 {
 	if mouseaiming = 1 then { dir = point_direction(x,y,mouse_x,mouse_y)
