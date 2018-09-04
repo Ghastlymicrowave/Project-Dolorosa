@@ -308,10 +308,10 @@ while place_meeting(x+hspeed,y,obj_obstacle) {
 	else hspeed = hspeed +1
 	hspd = 0
 }
-while place_meeting(x,y+vspeed,obj_obstacle) {
-if vspeed > 0 then vspeed = vspeed -1
-else vspeed = vspeed +1
-vspd = 0
+	while place_meeting(x,y+vspeed,obj_obstacle) {
+	if vspeed > 0 then vspeed = vspeed -1
+	else vspeed = vspeed +1
+	vspd = 0
 }
 
 while place_meeting(x+hspeed,y+vspeed,obj_obstacle) {
