@@ -304,13 +304,14 @@ else timesinceattack = 0
 // collision
 
 if place_meeting(x+hspeed,y+vspeed,obj_obstacle) or place_meeting(x,y+vspeed,obj_obstacle) or place_meeting(x+hspeed,y,obj_obstacle) {
-sweep_interval = 15
+sweep_interval = 8
+speed=0
 for ( var angle = sweep_interval; angle <= 80; angle += sweep_interval) {
         for ( var multiplier = -1; multiplier <= 1; multiplier += 2) {      
             var angle_to_check = direction+angle*multiplier;
             xtarg = x+lengthdir_x(maxspeed, angle_to_check);
             ytarg = y+lengthdir_y(maxspeed, angle_to_check);     
-            if place_free(xtarg,ytarg) {
+            if(!place_meeting(xtarg,ytarg,obj_obstacle)){
                 x = xtarg;
                 y = ytarg;  
                 exit;       
