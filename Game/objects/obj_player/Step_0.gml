@@ -309,8 +309,8 @@ speed=0
 for ( var angle = sweep_interval; angle <= 80; angle += sweep_interval) {
         for ( var multiplier = -1; multiplier <= 1; multiplier += 2) {      
             var angle_to_check = direction+angle*multiplier;
-            xtarg = x+lengthdir_x(maxspeed, angle_to_check);
-            ytarg = y+lengthdir_y(maxspeed, angle_to_check);     
+            xtarg = floor(x+lengthdir_x(maxspeed, angle_to_check))
+            ytarg = floor(y+lengthdir_y(maxspeed, angle_to_check))     
             if(!place_meeting(xtarg,ytarg,obj_obstacle)){
                 x = xtarg;
                 y = ytarg;  
