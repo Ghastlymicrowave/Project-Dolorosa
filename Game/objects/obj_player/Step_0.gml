@@ -302,26 +302,44 @@ else timesinceattack = 0
 
 
 // collision
+
+if place_meeting(x+hspeed,y+vspeed,obj_obstacle) or place_meeting(x,y+vspeed,obj_obstacle) or place_meeting(x+hspeed,y,obj_obstacle) {
+sweep_interval = 15
+for ( var angle = sweep_interval; angle <= 80; angle += sweep_interval) {
+        for ( var multiplier = -1; multiplier <= 1; multiplier += 2) {      
+            var angle_to_check = direction+angle*multiplier;
+            xtarg = x+lengthdir_x(maxspeed, angle_to_check);
+            ytarg = y+lengthdir_y(maxspeed, angle_to_check);     
+            if place_free(xtarg,ytarg) {
+                x = xtarg;
+                y = ytarg;  
+                exit;       
+            }   
+        }
+    }
+}
+
 #region collision
-while place_meeting(x+hspeed,y,obj_obstacle) {
-	if hspeed > 0 then hspeed = hspeed -1
-	else hspeed = hspeed +1
-	hspd = 0
-}
-	while place_meeting(x,y+vspeed,obj_obstacle) {
-	if vspeed > 0 then vspeed = vspeed -1
-	else vspeed = vspeed +1
-	vspd = 0
-}
+//while place_meeting(x+hspeed,y,obj_obstacle) {
+//	if hspeed > 0 then hspeed = hspeed -1
+//	else hspeed = hspeed +1
+//	hspd = 0
+//}
+//	while place_meeting(x,y+vspeed,obj_obstacle) {
+//	if vspeed > 0 then vspeed = vspeed -1
+//	else vspeed = vspeed +1
+//	vspd = 0
+//}
 
-while place_meeting(x+hspeed,y+vspeed,obj_obstacle) {
-	if hspeed > 0 then hspeed = hspeed -1
-	else hspeed = hspeed +1
-	if vspeed > 0 then vspeed = vspeed -1
-	else vspeed = vspeed +1
+//while place_meeting(x+hspeed,y+vspeed,obj_obstacle) {
+//	if hspeed > 0 then hspeed = hspeed -1
+//	else hspeed = hspeed +1
+//	if vspeed > 0 then vspeed = vspeed -1
+//	else vspeed = vspeed +1
 
-}
+//}
 #endregion
+
 //if !place_meeting(x+hspeed,y+vspeed,Parent_WalkingTriggerGrouping){
 //	global.Rm1posX = obj_player.x
 //	global.Rm1posY = obj_player.y

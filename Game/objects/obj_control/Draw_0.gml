@@ -5,6 +5,10 @@ if chat = 1 {
 	depth = -500
 	
 	
+	
+	
+	
+	
 	} else tick = 0
 	
 	

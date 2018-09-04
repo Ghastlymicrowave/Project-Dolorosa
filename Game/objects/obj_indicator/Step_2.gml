@@ -3,15 +3,15 @@ y= obj_player.y-60
 
 
 
-if irandom(8) = 0 {
-if irandom(1) = 0 then x = x + irandom(1)
-else x = x - irandom(1)
-}
+//if irandom(10) = 0 {
+//if irandom(1) = 0 then x = x + irandom(1)
+//else x = x - irandom(1)
+//}
 
-if irandom(8) = 0 {
-if irandom(1) = 0 then y = y + irandom(5)
-else y = y - irandom(5)
-}
+//if irandom(10) = 0 {
+//if irandom(1) = 0 then y = y + irandom(1)
+//else y = y - irandom(1)
+//}
 
 
 
