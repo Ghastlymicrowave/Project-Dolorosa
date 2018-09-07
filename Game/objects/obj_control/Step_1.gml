@@ -10,13 +10,18 @@ obj_drawtext.text= ""
 
 
 if chat = 1{
+	leftSprite = spr_testTextSprite
+	rightSprite = spr_testTextSprite1
+	nameplate = spr_nameplate_yeetman
+
 	#region convo 4
 	if convo = 4{
+		rightSprite=spr_whothehellknows
 		if step = 1{
-			DrawSumText("IM BORED.",1,5)
+			DrawSumText("I'm balding",1,1)
 		}
 		else if step = 2{
-			DrawSumText("THAT WAS NOT AN INVITATION TO TALK TO ME MORE",1,5)
+			DrawSumText("Feels bad man",1,1)
 		}
 		else if step = 3{
 			EndConvo()
@@ -138,6 +143,7 @@ obj_drawtext.drawing = 1
 	#endregion
 	#region Townsperson 4, convo 10
 	else if convo = 10 {
+		nameplate=spr_nameplate_oldMan
 		if step =1{
 			DrawSumText("The old man doesn’t say anything,+++++++++++++++ he just looks at you with an unexplainable fear in his eyes",1,1)
 		}

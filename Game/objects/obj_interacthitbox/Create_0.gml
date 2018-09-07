@@ -1,5 +1,5 @@
 
-speed = 80
+speed = 50
 
 step =0
 //indicatorID = 0

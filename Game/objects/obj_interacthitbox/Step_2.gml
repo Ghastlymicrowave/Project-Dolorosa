@@ -31,7 +31,7 @@ if place_meeting(x,y,obj_interactableParent){
 	}
 	
 }
-else if indicatorID !=0 {
+else if indicatorID !=0 or obj_control.chat=1{
 	indicatorID.tick1max = 1
 	indicatorID.fadeIn1FadeOut0=0
 	if indicatorID.image_alpha < 0.1 { instance_destroy(indicatorID)

@@ -19,3 +19,14 @@ canadvancewithE = true
 
 ID1=0
 ID2=0
+
+
+leftSpriteVOffset = .55555
+leftSpriteHOffset = .15625
+
+rightSpriteVOffset = .41666
+rightSpriteHOffset = .84375
+
+leftSprite = spr_testTextSprite
+rightSprite = spr_testTextSprite1
+nameplate = spr_nameplate_yeetman
