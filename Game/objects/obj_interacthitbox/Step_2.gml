@@ -19,6 +19,7 @@ if place_meeting(x,y,obj_interactableParent){
 				else if place_meeting(x,y,obj_text_townsperson4) then StartConvo(10,1)
 				else if place_meeting(x,y,obj_text_townsperson5) then StartConvo(11,1)
 				else if place_meeting(x,y,obj_text_townsperson6) then StartConvo(12,1)
+				else if place_meeting(x,y,obj_text_storyguard1) then StartConvo(13,1)
 				#endregion
 			}
 			else if place_meeting(x,y,Parent_DoorGrouping){

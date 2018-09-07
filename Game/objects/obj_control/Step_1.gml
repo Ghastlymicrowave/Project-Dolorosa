@@ -181,6 +181,19 @@ obj_drawtext.drawing = 1
 		}
 	}
 	#endregion
+	#region Story Guard 1, convo 13
+	else if convo = 13 {
+		if step =1{
+			DrawSumText("Hey+++++++, i'm here to take over your shift.+++++++ Get yourself home and take some rest+++++, you're gonna need it+++, if you can get any at all. ",2,2)
+		}
+		else if step = 2{
+			EndConvo()
+			StopDrawingText()
+		}
+	}
+	#endregion
+	
+	
 }	
 	//}else if convo = 3{
 	//	if step = 1{
