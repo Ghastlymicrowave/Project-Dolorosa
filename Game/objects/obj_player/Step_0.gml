@@ -303,42 +303,119 @@ else timesinceattack = 0
 
 // collision
 
-if place_meeting(x+hspeed,y+vspeed,obj_obstacle) or place_meeting(x,y+vspeed,obj_obstacle) or place_meeting(x+hspeed,y,obj_obstacle) {
-sweep_interval = 8
-speed=0
-for ( var angle = sweep_interval; angle <= 80; angle += sweep_interval) {
-        for ( var multiplier = -1; multiplier <= 1; multiplier += 2) {      
-            var angle_to_check = direction+angle*multiplier;
-            xtarg = floor(x+lengthdir_x(maxspeed, angle_to_check))
-            ytarg = floor(y+lengthdir_y(maxspeed, angle_to_check))     
-            if(!place_meeting(xtarg,ytarg,obj_obstacle)){
-                x = xtarg;
-                y = ytarg;  
-                exit;       
-            }   
-        }
-    }
-}
+//if place_meeting(x+hspeed,y+vspeed,obj_obstacle) or place_meeting(x,y+vspeed,obj_obstacle) or place_meeting(x+hspeed,y,obj_obstacle) {
+sweep_interval = 15
+	//if abs(hspeed) > abs(vspeed){ // horiz
+
+		//if hspeed > 0 { // right
+		
+		
+		
+		for (var angle = 0;angle<=50; angle += 1){
+				xtarg = round(x+lengthdir_x(speed,angle+direction))
+				ytarg = round(y+lengthdir_y(speed,angle+direction))
+				if !place_meeting(xtarg,ytarg,obj_obstacle){
+					direction = direction + angle
+					hspeed=round(hspeed)
+					vspeed=round(vspeed)
+					x=round(x)
+					y=round(y)
+					exit;
+				}
+			}
+		
+		for (var angle = 0;angle<=50; angle += 1){
+				xtarg = round(x+lengthdir_x(speed,-angle+direction))
+				ytarg = round(y+lengthdir_y(speed,-angle+direction))
+				if !place_meeting(xtarg,ytarg,obj_obstacle){
+					direction = direction -angle
+					hspeed=round(hspeed)
+					vspeed=round(vspeed)
+					x=round(x)
+					y=round(y)
+					exit;
+				}
+			}
+		
+			//for (var angle = 0;angle<=50; angle += 1){
+			//	xtarg = round(x+lengthdir_x(speed,angle+direction))
+			//	ytarg = round(y+lengthdir_y(speed,angle+direction))
+			//	if !place_meeting(xtarg,ytarg,obj_obstacle){
+			//		direction = direction + angle;
+			//		hspeed=round(hspeed)
+			//		vspeed=round(vspeed)
+			//		x=round(x)
+			//		y=round(y)
+			//		exit;
+			//	}
+			//}
+			
+			
+			
+			
+		
+		//}
+		//if hspeed < 0 {// left
+		//	for (var angle = 0;angle<=50; angle += 1){
+		//		xtarg = round(x+lengthdir_x(speed,angle))
+		//		ytarg = round(y+lengthdir_y(speed,angle))
+		//		if !place_meeting(xtarg,ytarg,obj_obstacle){
+		//			direction = direction + angle;
+		//			hspeed=round(hspeed)
+		//			vspeed=round(vspeed)
+		//			x=round(x)
+		//			y=round(y)
+		//			exit;
+		//		}
+		//	}
+		//}
+
+	//}else { //vert
+	
+		if hspeed < 0 { // up
+		
+		}
+		else {// down
+	
+		}
+//	}
+//}
+
+
+//speed=0
+//for ( var angle = sweep_interval; angle <= 80; angle += sweep_interval) {
+//        for ( var multiplier = -1; multiplier <= 1; multiplier += 2) {      
+//            var angle_to_check = direction+angle*multiplier;
+//            xtarg = floor(x+lengthdir_x(maxspeed, angle_to_check))
+//            ytarg = floor(y+lengthdir_y(maxspeed, angle_to_check))     
+//            if(!place_meeting(xtarg,ytarg,obj_obstacle)){
+//                x = xtarg;
+//                y = ytarg;  
+//                exit;       
+//            }   
+//        }
+//    }
+//}
 
 #region collision
-//while place_meeting(x+hspeed,y,obj_obstacle) {
-//	if hspeed > 0 then hspeed = hspeed -1
-//	else hspeed = hspeed +1
-//	hspd = 0
-//}
-//	while place_meeting(x,y+vspeed,obj_obstacle) {
-//	if vspeed > 0 then vspeed = vspeed -1
-//	else vspeed = vspeed +1
-//	vspd = 0
-//}
+while place_meeting(x+hspeed,y,obj_obstacle) {
+	if hspeed > 0 then hspeed = hspeed -1
+	else hspeed = hspeed +1
+	hspd = 0
+}
+	while place_meeting(x,y+vspeed,obj_obstacle) {
+	if vspeed > 0 then vspeed = vspeed -1
+	else vspeed = vspeed +1
+	vspd = 0
+}
 
-//while place_meeting(x+hspeed,y+vspeed,obj_obstacle) {
-//	if hspeed > 0 then hspeed = hspeed -1
-//	else hspeed = hspeed +1
-//	if vspeed > 0 then vspeed = vspeed -1
-//	else vspeed = vspeed +1
+while place_meeting(x+hspeed,y+vspeed,obj_obstacle) {
+	if hspeed > 0 then hspeed = hspeed -1
+	else hspeed = hspeed +1
+	if vspeed > 0 then vspeed = vspeed -1
+	else vspeed = vspeed +1
 
-//}
+}
 #endregion
 
 //if !place_meeting(x+hspeed,y+vspeed,Parent_WalkingTriggerGrouping){
