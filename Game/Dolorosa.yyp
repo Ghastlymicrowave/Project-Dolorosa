@@ -263,6 +263,14 @@
             }
         },
         {
+            "Key": "28bc4b17-8218-49ba-9664-38023e7b0f1d",
+            "Value": {
+                "id": "da0d7441-ea42-4596-97af-b654a197460d",
+                "resourcePath": "scripts\\@draw_background\\draw_background.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "28f3bfcf-8a78-450f-be28-2634bc9caa51",
             "Value": {
                 "id": "256c36e3-55c4-4b42-8113-abdf94780afc",
@@ -359,6 +367,14 @@
             }
         },
         {
+            "Key": "3d2bcf69-f06c-47af-9fca-ead232557e25",
+            "Value": {
+                "id": "5c54453e-cf1c-49b7-9457-773a9ff26c8f",
+                "resourcePath": "scripts\\@__init_global\\__init_global.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3f317eb6-5a2a-45eb-a326-dbffc1b3c7e8",
             "Value": {
                 "id": "cbd7fad1-a549-41bd-ad61-8e3d2070260d",
@@ -407,6 +423,14 @@
             }
         },
         {
+            "Key": "450c125e-1de0-4167-924c-e0824d973523",
+            "Value": {
+                "id": "b6b36bff-4239-477b-a108-8deb9a5c4deb",
+                "resourcePath": "notes\\compatibility_report_140918_150750750.yy",
+                "resourceType": "GMNotes"
+            }
+        },
+        {
             "Key": "453a400f-4488-47fe-b6f7-d2e677f71821",
             "Value": {
                 "id": "947832df-d62d-48f6-8769-e491e0f83ae7",
@@ -436,6 +460,14 @@
                 "id": "5c786e37-b07d-4ff3-991a-92178c36b635",
                 "resourcePath": "objects\\obj_playerhitbox\\obj_playerhitbox.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "4f12dfff-4671-493c-8a81-08b7f9a53538",
+            "Value": {
+                "id": "d0a2058b-a29f-4d3d-845b-b5ca51764fce",
+                "resourcePath": "views\\4f12dfff-4671-493c-8a81-08b7f9a53538.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -903,6 +935,22 @@
             }
         },
         {
+            "Key": "b2e9fdfb-8778-4bb5-b8a5-9c0a19befd9e",
+            "Value": {
+                "id": "f01c491a-84ee-4229-95d1-0d2107f16ae4",
+                "resourcePath": "scripts\\@__init_background\\__init_background.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "bbbd1058-2bf3-408e-9277-4d06e33ecde8",
+            "Value": {
+                "id": "99835fb3-b781-4070-a8c5-0224a022f2e1",
+                "resourcePath": "views\\bbbd1058-2bf3-408e-9277-4d06e33ecde8.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "bc8340b6-0f0a-4f53-8dcd-857893273f01",
             "Value": {
                 "id": "b577e7a3-89ca-408d-9e6a-404e8f87a6dc",
@@ -983,6 +1031,14 @@
             }
         },
         {
+            "Key": "ca51587d-a68e-4efd-805b-c38f230ec4b7",
+            "Value": {
+                "id": "e30106ad-6a3c-4dc5-b910-3423811c53df",
+                "resourcePath": "extensions\\Chromatic_Aberration_Shader\\Chromatic_Aberration_Shader.yy",
+                "resourceType": "GMExtension"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "3843224c-4d06-49f8-81c0-05f53a0bd0ec",
@@ -1020,6 +1076,14 @@
                 "id": "455a8c78-1a50-4d27-a844-ac829c877767",
                 "resourcePath": "views\\cfd9c663-f4ff-4879-a6a0-29aabdb59964.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d08844d1-ff8c-4f31-ad2a-2238ac91bd1e",
+            "Value": {
+                "id": "08ff05de-2cbc-4278-ac14-8d626b94fba6",
+                "resourcePath": "shaders\\sh_aberration\\sh_aberration.yy",
+                "resourceType": "GMShader"
             }
         },
         {
@@ -1191,6 +1255,22 @@
             }
         },
         {
+            "Key": "ec000890-82f1-42ef-9f28-651a9eedb37b",
+            "Value": {
+                "id": "61b4994a-6802-465c-bec8-208aa942087d",
+                "resourcePath": "objects\\e\\e.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f268c0d9-dae6-4a09-97ad-d440bc3707d9",
+            "Value": {
+                "id": "b8d2ee33-b2bf-4fb4-9e0a-8c16cfead9b1",
+                "resourcePath": "notes\\compatibility_report_140918_15090393.yy",
+                "resourceType": "GMNotes"
+            }
+        },
+        {
             "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
             "Value": {
                 "id": "b18287bc-74c3-4f2b-b71a-e418be229ea3",
@@ -1247,7 +1327,10 @@
         "2b6567b9-7052-49d9-90a7-47bcba209efe",
         "234ff719-41bb-48ce-8a2b-352519c631ed",
         "e7df1091-cae0-4def-b945-c28f76ff8055",
-        "5a509349-711f-4cb3-92eb-ebae1cab313b"
+        "5a509349-711f-4cb3-92eb-ebae1cab313b",
+        "28bc4b17-8218-49ba-9664-38023e7b0f1d",
+        "b2e9fdfb-8778-4bb5-b8a5-9c0a19befd9e",
+        "3d2bcf69-f06c-47af-9fca-ead232557e25"
     ],
     "tutorial": ""
 }
