@@ -144,8 +144,8 @@
         ]
     },
     "out_columns": 8,
-    "out_tilehborder": 20,
-    "out_tilevborder": 20,
+    "out_tilehborder": 50,
+    "out_tilevborder": 50,
     "spriteId": "18594da3-15d3-4b82-b57a-283620114c35",
     "sprite_no_export": true,
     "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",

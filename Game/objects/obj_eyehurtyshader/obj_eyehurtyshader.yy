@@ -2,7 +2,7 @@
     "id": "ec000890-82f1-42ef-9f28-651a9eedb37b",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "e",
+    "name": "obj_eyehurtyshader",
     "eventList": [
         {
             "id": "16fff76a-d515-49bd-aa45-2041130db791",
