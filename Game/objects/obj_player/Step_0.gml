@@ -51,6 +51,8 @@ if((keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_shift)) and da
 if(dashtimer>0){
 	if dashtimer > 0{ speed = 22 maxspeed = 22}
 	direction = dashdir
+	hspeed = round(hspeed)
+	vspeed = round(vspeed)
 	dashtimer = dashtimer-1
 	
 }else{
