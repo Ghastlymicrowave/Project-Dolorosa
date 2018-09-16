@@ -34,6 +34,9 @@ else if cursory > yviewcenter then y = y + verticaloffset* verticalmod
 speed = point_distance(xviewcenter,yviewcenter,cursorx,cursory) /camerasenitivity
 
 //speed = round(speed)
+if obj_control.inventory = 1 {
+	modifier = .25
+}
 if obj_control.chat = 1 {
 	if speed > 50 then speed = 50
 

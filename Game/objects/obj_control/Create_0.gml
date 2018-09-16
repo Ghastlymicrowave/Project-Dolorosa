@@ -30,3 +30,8 @@ rightSpriteHOffset = .84375
 leftSprite = spr_testTextSprite
 rightSprite = spr_testTextSprite1
 nameplate = spr_nameplate_yeetman
+
+inv = global.inventory 
+inventory = 0
+invCreated = 0
+numOfItems = 0

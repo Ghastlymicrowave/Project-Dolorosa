@@ -195,7 +195,30 @@ obj_drawtext.drawing = 1
 	
 	
 }	
-	//}else if convo = 3{
+
+// toggle inventory
+
+if keyboard_check_pressed(ord("M")) {
+if chat != 1 && inventory = 0 then inventory = 1	
+else {inventory = 0; invCreated=0}
+}
+
+
+
+// find numOfItems
+if inventory = 1 {
+var i
+for (i = 0; i<10; i ++)
+	{
+	if inv[i,0] = 0 {
+		numOfItems = i 
+		break
+		}
+	}
+// display objects
+}
+
+//}else if convo = 3{
 	//	if step = 1{
 	//		DrawSumText("STOP TALKING TO ME NOW",2,1)
 	//	}

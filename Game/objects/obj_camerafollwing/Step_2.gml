@@ -6,6 +6,7 @@ speedy = distance_to_object(obj_cameraplace)/(cameraspeed)
 //speedy =  distance_to_object(obj_cameraplace)/30 -obj_player.speed
 move_towards_point(obj_cameraplace.x,obj_cameraplace.y,speedy)
 
-
+x=round(x)
+y=round(y)
 //if obj_player.dashtimer > 0 then cameraspeed = 4
 //else cameraspeed = 3

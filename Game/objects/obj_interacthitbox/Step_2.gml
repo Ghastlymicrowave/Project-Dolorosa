@@ -11,6 +11,8 @@ if place_meeting(x,y,obj_interactableParent){
 				#region Text objects
 //	if you wanted to change the convo per readthrough then you could store the variable on the object and increment that each readthrough end
 				if place_meeting(x,y,obj_interactable_test) then StartConvo(4,1)
+				
+				
 			    else if place_meeting(x,y,obj_interactable_test2) then StartConvo(5,1)
 			    else if place_meeting(x,y,obj_interactable_test3) then StartConvo(6,1)
 				else if place_meeting(x,y,obj_text_townsperson1) then StartConvo(7,1)
@@ -22,7 +24,25 @@ if place_meeting(x,y,obj_interactableParent){
 				else if place_meeting(x,y,obj_text_storyguard1) then StartConvo(13,1)
 				#endregion
 			}
-			else if place_meeting(x,y,Parent_DoorGrouping){
+			else if place_meeting(x,y,Parent_Pickupable) {
+				
+			//	if place_meeting(x,y,obj_test_pickupablething) {
+					//itemid = instance_place(x,y,obj_test_pickupablething)
+					itemid = instance_place(x,y,Parent_Pickupable)
+					var i
+					for (i = 0; i < 10; i ++){
+					if obj_control.inv[i,0] = 0 {
+						obj_control.inv[i,0] = itemid.objId
+						obj_control.inv[i,1] = itemid.idtype
+						obj_control.inv[i,2] = itemid.itname
+						instance_destroy(itemid)
+						break
+						}
+					}
+				//}
+				
+			}
+			else if place_meeting(x,y,Parent_DoorGrouping) {
 				#region Door objects
 				if place_meeting(x,y,obj_DoorToTestRoom3) { global.Rm1posX = obj_player.x;global.Rm1posY = obj_player.y;room= Rm_Test3}
 				else if place_meeting(x,y,obj_DoorToTestRoom1) {room= Rm_Test1}
