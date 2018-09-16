@@ -1167,6 +1167,14 @@
             }
         },
         {
+            "Key": "d34e420d-298e-4366-b177-051d879fe2bf",
+            "Value": {
+                "id": "813ab9e0-6735-4415-8e92-12cd9fd48d3c",
+                "resourcePath": "scripts\\ShiftForMissingItems\\ShiftForMissingItems.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d39e0699-23ea-447c-bb88-277b1eb49d48",
             "Value": {
                 "id": "98a0f779-3155-4350-8bbf-3635926d7405",
@@ -1411,7 +1419,8 @@
         "28bc4b17-8218-49ba-9664-38023e7b0f1d",
         "b2e9fdfb-8778-4bb5-b8a5-9c0a19befd9e",
         "3d2bcf69-f06c-47af-9fca-ead232557e25",
-        "92df6eec-0c17-4e2d-a498-482970570705"
+        "92df6eec-0c17-4e2d-a498-482970570705",
+        "d34e420d-298e-4366-b177-051d879fe2bf"
     ],
     "tutorial": ""
 }
