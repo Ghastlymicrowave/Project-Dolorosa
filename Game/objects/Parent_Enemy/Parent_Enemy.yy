@@ -1,23 +1,14 @@
 {
-    "id": "4d8f3f9d-d7dc-4ebf-8125-1b4b2e50677b",
+    "id": "24c01085-05c2-4226-a018-d04dbb6b2aab",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_playerhitbox",
+    "name": "Parent_Enemy",
     "eventList": [
-        {
-            "id": "a4afa466-63ff-46f0-9163-fbd042f7ad33",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "4d8f3f9d-d7dc-4ebf-8125-1b4b2e50677b"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "e8e6146d-bb7e-4b24-8448-928f3174ce5e",
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -33,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "5d424a33-bb1b-42f1-8130-012af44ffa39",
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }
