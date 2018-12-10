@@ -411,23 +411,24 @@ sweep_interval = 15
 //}
 
 #region collision
-while place_meeting(x+hspeed,y,obj_obstacle) || place_meeting(x+hspeed,y,Parent_Enemy){
+if !place_meeting(x,y,obj_obstacle){
+while place_meeting(x+hspeed,y,obj_obstacle) {
 	if hspeed > 0 then hspeed = hspeed -1
 	else hspeed = hspeed +1
 	hspd = 0
 }
-	while place_meeting(x,y+vspeed,obj_obstacle) || place_meeting(x+hspeed,y,Parent_Enemy) {
+	while place_meeting(x,y+vspeed,obj_obstacle)  {
 	if vspeed > 0 then vspeed = vspeed -1
 	else vspeed = vspeed +1
 	vspd = 0
 }
 
-while place_meeting(x+hspeed,y+vspeed,obj_obstacle) || place_meeting(x+hspeed,y,Parent_Enemy) {
-	if hspeed > 0 then hspeed = hspeed -1
-	else hspeed = hspeed +1
-	if vspeed > 0 then vspeed = vspeed -1
-	else vspeed = vspeed +1
+while place_meeting(x+hspeed,y+vspeed,obj_obstacle)  {
+	if speed >0 then speed -=sign(speed)
+	hspeed = sign(hspeed)*floor(abs(hspeed))
+	vspeed = sign(vspeed)*floor(abs(vspeed))
 
+}
 }
 #endregion
 
